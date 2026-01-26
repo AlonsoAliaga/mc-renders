@@ -515,7 +515,8 @@ const models = {
       "herobrine_hill",
       "quick_hide",
       "malevolent",
-      "off_to_the_stars"
+      "off_to_the_stars",
+      "wheat",
     ]
   },
   "custom-6": {
@@ -1466,6 +1467,7 @@ async function updateTest(username) {
 async function updateModel(username) {
   if(typeof username == "undefined") username = lastSuccessUsername;
   let modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+  
   let modelImage;
   if(modelsCache.has(modelKey)) {
     modelImage = modelsCache.get(modelKey);
