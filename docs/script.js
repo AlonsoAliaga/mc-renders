@@ -470,7 +470,7 @@ const models = {
   },
   "custom-1": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vbW9kZWwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiItNC45NCIsInkiOiIzMi4wOSIsInoiOiItMjEuNiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMy42NyIsInkiOiIxNi4zMSIsInoiOiIzLjM1In0=`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vbW9kZWwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiItNC45NCIsInkiOiIzMi4wOSIsInoiOiItMjEuNiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMy42NyIsInkiOiIxNi4zMSIsInoiOiIzLjM1In17YWRkaXRpb25hbH0=`,
     image: "custom/custom-1.png",
     name: "How are you?",
     crops: [
@@ -483,7 +483,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvYXZhdGFyL3t1c2VybmFtZX0vMzAw`,
     image: "custom/custom-2.png",
-    name: "Pixel Head",
+    name: "Pixel Head<br><small><small>❌ Not supported with custom skin</small></small>",
     crops: [
       "None available"
     ]
@@ -492,7 +492,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvaGVhZC97dXNlcm5hbWV9`,
     image: "custom/custom-3.png",
-    name: "Isometric Head",
+    name: "Isometric Head<br><small><small>❌ Not supported with custom skin</small></small>",
     crops: [
       "None available"
     ]
@@ -501,14 +501,14 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9yZW5kZXIuc2tpbm1jLm5ldC8zZC5waHA/dXNlcj17dXNlcm5hbWV9JnZyPTgmaHIwJmhyaD0tMzkmYWE9JmhlYWRPbmx5PXRydWUmcmF0aW89NTAucG5n`,
     image: "custom/custom-4.png",
-    name: "Cube Head",
+    name: "Cube Head<br><small><small>❌ Not supported with custom skin</small></small>",
     crops: [
       "None available"
     ]
   },
   "custom-5": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9L3t1c2VybmFtZX0=`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9L3t1c2VybmFtZX17YWRkaXRpb25hbH0=`,
     image: "custom/custom-5.png",
     name: "Wallpaper Render",
     crops: [
@@ -521,7 +521,8 @@ const models = {
   },
   "custom-6": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1e2FkZGl0aW9uYWx9`,
+    //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1`,
     image: "custom/custom-6.png",
     name: "Friend Herobrine",
     crops: [
@@ -533,7 +534,8 @@ const models = {
   "custom-7": {
     restricted: true,
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL2xvb2stdGhlcmUub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIzOC41NSIsInkiOiIzLjY3IiwieiI6Ii01MC41NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC40OSIsInkiOiIxNi43OSIsInoiOiItNC4xMiJ9`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL2xvb2stdGhlcmUub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIzOC41NSIsInkiOiIzLjY3IiwieiI6Ii01MC41NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC40OSIsInkiOiIxNi43OSIsInoiOiItNC4xMiJ9e2FkZGl0aW9uYWx9`,
+    //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL2xvb2stdGhlcmUub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIzOC41NSIsInkiOiIzLjY3IiwieiI6Ii01MC41NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC40OSIsInkiOiIxNi43OSIsInoiOiItNC4xMiJ9`,
     image: "custom/custom-7.png",
     name: "Look there! Is that a plane?",
     crops: [
@@ -544,7 +546,8 @@ const models = {
   },
   "custom-8": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3lvdS10b28tc21hbGwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIwIiwieSI6Ii0xNS44IiwieiI6Ii0zNi40MiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMCIsInkiOiIxNi41NSIsInoiOiIwIn0=`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3lvdS10b28tc21hbGwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIwIiwieSI6Ii0xNS44IiwieiI6Ii0zNi40MiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMCIsInkiOiIxNi41NSIsInoiOiIwIn17YWRkaXRpb25hbH0=`,
+    //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3lvdS10b28tc21hbGwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIwIiwieSI6Ii0xNS44IiwieiI6Ii0zNi40MiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMCIsInkiOiIxNi41NSIsInoiOiIwIn0=`,
     image: "custom/custom-8.png",
     name: "You are too small!",
     crops: [
@@ -1100,6 +1103,7 @@ window.onclick = function(event) {
     clearIssues();
   }
 }
+let loadedMainSkinBuffer = undefined;
 let loadedSkinBuffer = undefined;
 const usernameInput = document.getElementById('inputText');
 const usernameInputDiv = document.getElementById('inputTextDiv');
@@ -1465,9 +1469,90 @@ async function updateTest(username) {
   img.src = link; // Replace with your image URL
 }
 async function updateModel(username) {
+  if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
+  if(typeof username == "undefined") {
+    if (typeof loadedMainSkinBuffer !== "undefined") {
+      username = loadedMainSkinBuffer;
+    } else {
+      username = lastSuccessUsername;
+    }
+  }
+  let modelKey;
+  let additionalToUse = "";
+  if(username.length >= 20) {
+    modelKey = `${username}$$$${currentRenderType}$$$${currentCrop}`;
+    additionalToUse = `skinUrl=${username}`;
+    username = "AlonsoAliaga777"; 
+  } else {
+    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+  }
+
+  let modelImage;
+  if(modelsCache.has(modelKey)) {
+    modelImage = modelsCache.get(modelKey);
+  } else {
+    let modelData = models[currentRenderType];
+    if(!modelData) {
+      console.log(`UNKNOWN MODEL! HOW?`)
+    } else {
+      let url;
+      if(modelData.custom) {
+        url = atob(modelData.url);
+        url = url.replace(/{username}/g, username).replace(/{crop}/g, currentCrop);
+        if(url.endsWith(`${username}{additional}`)) {
+          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop);
+        } else {
+          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop);
+        }
+      } else {
+        url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
+        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop);
+      }
+      try {
+        let imageBuffer = await loadImage(url);
+        modelsCache.set(modelKey, imageBuffer);
+        modelImage = imageBuffer;
+      } catch(e) {
+        console.log(`Error getting image?: ${e.message}`);
+        return;
+      }
+    }
+  }
+
+  let revertSkin = document.getElementById("button-revert-skin").checked;
+
+  let finalRender = document.getElementById("final-canvas");
+  let ctx = finalRender.getContext("2d");
+  ctx.clearRect(0, 0, finalRender.width, finalRender.height);
+  finalRender.width = modelImage.width;
+  finalRender.height = modelImage.height;
+  ctx = finalRender.getContext("2d");
+  
+  if(revertSkin) {
+    ctx.save();
+    ctx.scale(-1, 1);
+    ctx.drawImage(modelImage, (finalRender.width * -1), 0, finalRender.width, finalRender.height);
+    ctx.restore();
+  } else {
+    ctx.drawImage(modelImage, 0, 0);
+  }
+
+  if(typeof lastObtainedUUID != "undefined") {
+    console.log(`Obtained UUID is valid!`);
+  } else {
+    console.log(`Obtained UUID is NOT valid!`);
+  }
+}
+async function updateModel3(username) {
+  if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
   if(typeof username == "undefined") username = lastSuccessUsername;
   let modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
-  
+  let additionalToUse = "";
+  if(username.length >= 20) {
+    modelKey = `${username}$$$${currentRenderType}$$$${currentCrop}`;
+    additionalToUse = `skinUrl=${username}`
+    username = "AlonsoAliaga777";
+  }
   let modelImage;
   if(modelsCache.has(modelKey)) {
     modelImage = modelsCache.get(modelKey);
@@ -1479,10 +1564,18 @@ async function updateModel(username) {
       let url;
       if(modelData.custom) {
         url = atob(modelData.url);
+        //console.log(url)
+        url = url.replace(/{username}/g,username).replace(/{crop}/g,currentCrop);
+        //console.log(url)
+        if(url.endsWith(`${username}{additional}`)) {
+          url = url.replace(/{additional}/g,`?${additionalToUse}`).replace(/{crop}/g,currentCrop);
+        }else{
+          url = url.replace(/{additional}/g,`&${additionalToUse}`).replace(/{crop}/g,currentCrop);
+        }
       }else{
-        url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9").replace(/{render_type}/g,currentRenderType);
+        url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g,currentRenderType);
+        url = url.replace(/{username}/g,username).replace(/{additional}/g,`?${additionalToUse}`).replace(/{crop}/g,currentCrop);
       }
-      url = url.replace(/{username}/g,username).replace(/{crop}/g,currentCrop);
       try{
         let imageBuffer = await loadImage(url);
         modelsCache.set(modelKey,imageBuffer);
@@ -1681,7 +1774,24 @@ async function addListeners() {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random()*16777215).toString(16).toUpperCase().padStart(6, '0')}`;
 }
+let timeOnLoad = Date.now();
 function uploadCustomSkinTexture(event) {
+  if(typeof loadedMainSkinBuffer != "undefined") {
+    //Remove custom skin
+    loadedMainSkinBuffer = undefined;
+    lastSuccessUsername = "AlonsoAliaga";
+    document.getElementById("customskindiv").innerHTML = "🌀 Upload<br>Custom Skin";
+    updateModel("AlonsoAliaga")
+    return;
+  }
+  if(timeOnLoad + 1000 > Date.now()) {
+    alertError(`<b>⏳ Please wait a moment! ⏳</b><br><span style="font-size: small;">Page is still loading.</span>`);
+    return;
+  }
+  if(adBlockEnabled) {
+    alertError(`<b>❌ Disable AdBlock! ❌</b><br><span style="font-size: small;">To access custom textures!</span>`);
+    return;
+  }
   //console.log(event);
   //let imageContainer = document.getElementById("motd-icon");
   // Create a new input element
@@ -1711,10 +1821,21 @@ function uploadCustomSkinTexture(event) {
           alertError(`<b>💎 Wrong skin texture! 💎</b><br><span style="font-size: small;">Skin must be 64px or 32px width!</span>`);
           return;
         }
-        skinType = 1;
-        loadedSkinBuffer = img;
+        //skinType = 1;
+        let tempCanvas = document.createElement("canvas");
+        tempCanvas.width = 64;
+        tempCanvas.height = 64;
+        let tempCtx = tempCanvas.getContext("2d");
+        tempCtx.drawImage(img, 0, 0);
+        //console.log(tempCanvas.toDataURL())
+        loadedMainSkinBuffer = tempCanvas.toDataURL();
+
+        document.getElementById("customskindiv").innerHTML = "❌ Remove<br>Custom Skin";
+        
+        updateModel(loadedMainSkinBuffer)
+
         //console.log(`Uploaded custom image: ${file.name} | ${img.width}px x ${img.height}px`);
-        updateSkin(true);
+        //updateSkin(true);
       };
     });
 
@@ -2025,17 +2146,28 @@ function loadModels() {
     }
   }
 }
-function selectModel(renderType) {
+function selectModel2(renderType) {
   if(typeof adBlockEnabled != "undefined") {
     if(adBlockEnabled) {
       if(adLockedModels.includes(renderType)) return;
     }
   }
   if(globalModelsLock) {
-    let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
-    if(!modelsCache.has(modelKey)) {
-      return;
+    if(typeof loadedMainSkinBuffer != "undefined") {
+      let modelKey = `${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      if(!modelsCache.has(modelKey)) {
+        //console.log(`[Not in cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${currentRenderType}$$$${currentCrop}`);
+        return;
+      }//else console.log(`[In cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${currentRenderType}$$$${currentCrop}`);
+    }else{
+      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      if(!modelsCache.has(modelKey)) {
+        //console.log(`[Not in cache - username] globalModelsLock: ${globalModelsLock} | ${currentRenderType}$$$${currentCrop}`);
+        return;
+      }//else console.log(`[In cache - username] globalModelsLock: ${globalModelsLock} | ${currentRenderType}$$$${currentCrop}`);
     }
+  }else{
+    //console.log(`globalModelsLock: ${globalModelsLock} | ${currentRenderType}$$$${currentCrop}`);
   }
   let renderData = models[renderType];
   if(!renderData) {
@@ -2057,10 +2189,86 @@ function selectModel(renderType) {
     element.onclick = function(){selectCrop(crop)}
     cropsDiv.appendChild(element);
   }
-  updateModel(lastSuccessUsername);
-  if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
-    lockModels(5);
-    lockCrops(3);
+  if(typeof loadedMainSkinBuffer != "undefined") {
+    updateModel(loadedMainSkinBuffer);
+    if(!modelsCache.has(`${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockModels(5);
+      lockCrops(3);
+    }
+  }else{
+    updateModel(lastSuccessUsername);
+    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockModels(5);
+      lockCrops(3);
+    }
+  }
+}
+function selectModel(renderType) {
+  if(typeof adBlockEnabled != "undefined") {
+    if(adBlockEnabled) {
+      if(adLockedModels.includes(renderType)) return;
+    }
+  }
+  let renderData = models[renderType];
+  if(!renderData) {
+    console.log(`Invalid render type?`);
+    return;
+  }
+  let targetCrop = renderData.crops[0]; 
+
+  if(globalModelsLock) {
+    if(typeof loadedMainSkinBuffer != "undefined") {
+      let modelKey = `${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${renderType}$$$${targetCrop}`;
+      
+      if(!modelsCache.has(modelKey)) {
+        //console.log(`[Not in cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
+        return;
+      } else {
+        //console.log(`[In cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
+      }
+    } else {
+      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${renderType}$$$${targetCrop}`;
+      
+      if(!modelsCache.has(modelKey)) {
+        //console.log(`[Not in cache - username] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
+        return;
+      } else {
+        //console.log(`[In cache - username] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
+      }
+    }
+  } else {
+    //console.log(`globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
+  }
+  currentCrop = targetCrop;
+  currentRenderType = renderType;
+  
+  //console.log(`Selected ${renderType} => ${renderData.name}`)
+  
+  let cropsDiv = document.getElementById("crops-div");
+  cropsDiv.innerHTML = "";
+  for(let crop of renderData.crops) {
+    let element = document.createElement("button");
+    let length = crop.length * 6 + 30;
+    element.innerHTML = `<img width="50px" src="https://www.svgrepo.com/show/527072/full-screen-square.svg"><img>
+                     <span>${pascalCase(crop)}</span>`
+    element.classList.add("cool-button");
+    element.width = length;
+    element.onclick = function(){selectCrop(crop)}
+    cropsDiv.appendChild(element);
+  }
+
+  if(typeof loadedMainSkinBuffer != "undefined") {
+    updateModel(loadedMainSkinBuffer);
+    if(!modelsCache.has(`${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockModels(5);
+      lockCrops(3);
+    }
+  } else {
+    updateModel(lastSuccessUsername);
+    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockModels(5);
+      lockCrops(3);
+    }
   }
 }
 function pascalCase(crop) {
@@ -2082,16 +2290,29 @@ function pascalCase(crop) {
 }
 function selectCrop(crop) {
   if(globalCropsLock) {
-    let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
-    if(!modelsCache.has(modelKey)) {
-      return;
+    if(typeof loadedMainSkinBuffer != "undefined") {
+      let modelKey = `${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      if(!modelsCache.has(modelKey)) {
+        return;
+      }
+    }else{
+      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      if(!modelsCache.has(modelKey)) {
+        return;
+      }
     }
   }
   currentCrop = crop;
-  console.log(`Crop selected: ${currentCrop} (${currentRenderType})`)
-  updateModel(lastSuccessUsername);
-  if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
-    lockCrops(5);
+  //console.log(`Crop selected: ${currentCrop} (${currentRenderType})`)
+  updateModel(typeof loadedMainSkinBuffer != "undefined" ? loadedMainSkinBuffer : lastSuccessUsername);
+  if(typeof loadedMainSkinBuffer != "undefined") {
+    if(!modelsCache.has(`${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockCrops(5);
+    }
+  }else{
+    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+      lockCrops(5);
+    }
   }
 }
 loadModels();
@@ -2117,6 +2338,7 @@ function lockModels(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliag
   let toLock = Object.keys(models).map(n=>document.getElementById(`model-${n}`)).filter(Boolean);
   //let cards = document.querySelectorAll(".render-card");
   globalModelsLock = true;
+  console.log(`Locking models for ${secs} seconds..`);
   for(let card of toLock) {
     if(card.classList.contains('locked')) continue;
     if(card.classList.contains('adlocked')) continue;
@@ -2131,16 +2353,25 @@ function lockModels(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliag
         clearInterval(t);
         card.classList.remove('locked');
         ov.remove();
-        globalModelsLock = false;
+        //globalModelsLock = false;
       } else {
         ov.querySelector('span').textContent = `Available in ${seconds}s`;
       }
     }, 1000);
   }
+  let seconds = secs;
+  const i = setInterval(() => {
+    if (--seconds <= 0) {
+      clearInterval(i);
+      globalModelsLock = false;
+      console.log(`Models unlocked!`);
+    }
+  }, 1000);
 }
 function lockCrops(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/lock-icon.png') {
   let crops = document.querySelectorAll(".cool-button");
   globalCropsLock = true;
+  console.log(`Locking crops for ${secs} seconds..`);
   for(let crop of crops) {
     if(crop.classList.contains('locked')) return;
     let seconds = secs;
@@ -2154,12 +2385,20 @@ function lockCrops(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga
         clearInterval(t);
         crop.classList.remove('locked');
         ov.remove();
-        globalCropsLock = false;
+        //globalCropsLock = false;
       } else {
         ov.querySelector('span').textContent = `Available in ${seconds}s`;
       }
     }, 1000);
   }
+  let seconds = secs;
+  const i = setInterval(() => {
+    if (--seconds <= 0) {
+      clearInterval(i);
+      globalCropsLock = false;
+      console.log(`Crops unlocked!`);
+    }
+  }, 1000);
 }
 // Example: lock all buttons for 5 seconds on page load
 window.addEventListener('DOMContentLoaded', () => {
