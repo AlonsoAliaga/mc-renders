@@ -1788,7 +1788,7 @@ function uploadCustomSkinTexture(event) {
     alertError(`<b>⏳ Please wait a moment! ⏳</b><br><span style="font-size: small;">Page is still loading.</span>`);
     return;
   }
-  if(adBlockEnabled) {
+  if(typeof adBlockEnabled == "undefined" || adBlockEnabled) {
     alertError(`<b>❌ Disable AdBlock! ❌</b><br><span style="font-size: small;">To access custom textures!</span>`);
     return;
   }
@@ -2146,6 +2146,7 @@ function loadModels() {
     }
   }
 }
+/*
 function selectModel2(renderType) {
   if(typeof adBlockEnabled != "undefined") {
     if(adBlockEnabled) {
@@ -2203,8 +2204,11 @@ function selectModel2(renderType) {
     }
   }
 }
+*/
 function selectModel(renderType) {
-  if(typeof adBlockEnabled != "undefined") {
+  if(typeof adBlockEnabled == "undefined") {
+    if(adLockedModels.includes(renderType)) return;
+  }else {
     if(adBlockEnabled) {
       if(adLockedModels.includes(renderType)) return;
     }
