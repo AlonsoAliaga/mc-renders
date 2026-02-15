@@ -2400,6 +2400,7 @@ function lockCrops(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga
     }
   }, 1000);
 }
+let myTimeout;
 // Example: lock all buttons for 5 seconds on page load
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('button').forEach(btn => lockModels(btn, 5));
@@ -2413,6 +2414,9 @@ document.addEventListener("DOMContentLoaded", () => {
       loadChecking();
     },10000)
   },2500)
+  setTimeout(()=>{
+    if(typeof window.getRandomStyle == "undefined" && myTimeout == undefined) processAds();
+  },2000)
 });
 function lockModelsWithMessage(types,className,message,iconUrl='https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/lock-icon.png') {
   let elements = types.map(n=>document.getElementById(`model-${n}`)).filter(Boolean);
