@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13"];
 const models = {
   "default": {
     image: "default.png",
@@ -590,6 +590,36 @@ const models = {
     url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L3NpZGUve3V1aWR9`,
     image: "custom/custom-12.png",
     name: "Isometric Side 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
+  "custom-13": {
+    custom: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9iYWNrL3t1dWlkfQ==`,
+    image: "custom/custom-13.png",
+    name: "Pixel (back)<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
+  "custom-14": {
+    custom: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9sZWZ0L3t1dWlkfQ==`,
+    image: "custom/custom-14.png",
+    name: "Pixel (left)<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
+  "custom-15": {
+    custom: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9yaWdodC97dXVpZH0=`,
+    image: "custom/custom-15.png",
+    name: "Pixel (right)<br><small><small>❌ Not supported with custom skin</small></small>",
     uuid: true,
     crops: [
       "Not available"
