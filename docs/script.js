@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","custom-5","custom-6","custom-7"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12"];
 const models = {
   "default": {
     image: "default.png",
@@ -554,6 +554,45 @@ const models = {
       "full",
       "bust",
       "face"
+    ]
+  },
+  "custom-9": {
+    custom: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9idXN0L3t1dWlkfQ==`,
+    image: "custom/custom-9.png",
+    name: "Bust 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+    ]
+  },
+  "custom-10": {
+    custom: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2Zyb250L3t1dWlkfQ==`,
+    image: "custom/custom-10.png",
+    name: "Front 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
+  "custom-11": {
+    custom: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2JhY2sve3V1aWR9`,
+    image: "custom/custom-11.png",
+    name: "Back 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
+  "custom-12": {
+    custom: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L3NpZGUve3V1aWR9`,
+    image: "custom/custom-12.png",
+    name: "Isometric Side 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
     ]
   }
 }
@@ -1498,6 +1537,7 @@ async function updateModel(username) {
       let url;
       if(modelData.custom) {
         url = atob(modelData.url);
+        if(modelData.uuid) url = url.replace(/{uuid}/g, cacheUserUUID.get(username.toLowerCase()) || "");
         url = url.replace(/{username}/g, username).replace(/{crop}/g, currentCrop);
         if(url.endsWith(`${username}{additional}`)) {
           url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop);
