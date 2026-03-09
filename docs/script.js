@@ -1537,6 +1537,7 @@ async function updateTest(username) {
   }
   img.src = link; // Replace with your image URL
 }
+let scaleId = "normal";
 let scale = 1;
 async function updateModel(username) {
   if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
@@ -2410,44 +2411,52 @@ function loadListener() {
   });
 }
 let scals = {
-  "1": {
+  "normal": {
     name: "Normal 👾",
-    next: 3
+    next: "hq",
+    scaleId: 1,
   },
-  "3": {
+  "hq": {
     name: "High quality 🔎",
-    next: 5
+    scaleId: 3,
+    next: "hd",
   },
-  "5": {
+  "hd": {
     name: "High definition 💎",
-    next: 8
+    scaleId: 5,
+    next: "2k",
   },
-  "8": {
+  "2k": {
     name: "2K 🪞",
-    next: 12
+    scaleId: 8,
+    next: "4k",
   },
-  "12": {
+  "4k": {
     name: "4K 🧪",
-    next: 1
+    scaleId: 12,
+    next: "normal",
   }
 }
 function toggleQuality() {
   if(typeof window.getRandomStyle == "undefined" || typeof adBlockEnabled == "undefined" || adBlockEnabled || typeof myTimeout != "undefined") return;
   let buttonQuality = document.getElementById("button-quality-label");
   if(!buttonQuality) return;
-  let current = scals[`${scale}`];
+  let current = scals[scaleId];
   if(typeof current == "undefined") {
     scale = 1;
+    scaleId = "normal";
     buttonQuality.innerHTML = `Image quality: Normal 👾`
     return;
   }
-  let next = scals[`${current.next}`];
-  if(typeof current == "undefined") {
+  let next = scals[current.next];
+  if(typeof next == "undefined") {
     scale = 1;
+    scaleId = "normal";
     buttonQuality.innerHTML = `Image quality: Normal 👾`
     return;
   }
-  scale = next.next;
+  scale = next.scaleId;
+  scaleId = next.next;
   buttonQuality.innerHTML = `Image quality: ${next.name}`
   alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b>`);
 }
