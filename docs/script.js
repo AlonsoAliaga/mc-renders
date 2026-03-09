@@ -2410,7 +2410,7 @@ function loadListener() {
   });
 }
 let scals = {
-  "0": {
+  "1": {
     name: "Normal 👾",
     next: 3
   },
@@ -2428,7 +2428,7 @@ let scals = {
   },
   "12": {
     name: "4K 🧪",
-    next: 0
+    next: 1
   }
 }
 function toggleQuality() {
@@ -2437,13 +2437,13 @@ function toggleQuality() {
   if(!buttonQuality) return;
   let current = scals[`${scale}`];
   if(typeof current == "undefined") {
-    scale = 0;
+    scale = 1;
     buttonQuality.innerHTML = `Image quality: Normal 👾`
     return;
   }
   let next = scals[`${current.next}`];
   if(typeof current == "undefined") {
-    scale = 0;
+    scale = 1;
     buttonQuality.innerHTML = `Image quality: Normal 👾`
     return;
   }
