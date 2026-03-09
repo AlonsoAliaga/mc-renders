@@ -2433,7 +2433,7 @@ let scals = {
 }
 function toggleQuality() {
   if(typeof window.getRandomStyle == "undefined" || typeof adBlockEnabled == "undefined" || adBlockEnabled || typeof myTimeout != "undefined") return;
-  let buttonQuality = document.getElementById("button-quality");
+  let buttonQuality = document.getElementById("button-quality-label");
   if(!buttonQuality) return;
   let current = scals[`${scale}`];
   if(typeof current == "undefined") {
