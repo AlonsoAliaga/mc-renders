@@ -1537,6 +1537,7 @@ async function updateTest(username) {
   }
   img.src = link; // Replace with your image URL
 }
+let scale = 1;
 async function updateModel(username) {
   if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
   if(typeof username == "undefined") {
@@ -1549,11 +1550,11 @@ async function updateModel(username) {
   let modelKey;
   let additionalToUse = "";
   if(username.length >= 20) {
-    modelKey = `${username}$$$${currentRenderType}$$$${currentCrop}`;
+    modelKey = `${username}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
     additionalToUse = `skinUrl=${username}`;
     username = "AlonsoAliaga777"; 
   } else {
-    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$${scale}`;
   }
 
   let modelImage;
@@ -1570,13 +1571,13 @@ async function updateModel(username) {
         if(modelData.uuid) url = url.replace(/{uuid}/g, cacheUserUUID.get(username.toLowerCase()) || "");
         url = url.replace(/{username}/g, username).replace(/{crop}/g, currentCrop);
         if(url.endsWith(`${username}{additional}`)) {
-          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop);
+          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop) + "&renderScale="+scale;
         } else {
-          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop);
+          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop) + "&renderScale="+scale;
         }
       } else {
         url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
-        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop);
+        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}&renderScale=${scale}`).replace(/{crop}/g, currentCrop);
       }
       try {
         let imageBuffer = await loadImage(url);
