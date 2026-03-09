@@ -2432,7 +2432,7 @@ let scals = {
   }
 }
 function toggleQuality() {
-  if(typeof window.getRandomStyle == "undefined" && typeof adBlockEnabled == "undefined" || adBlockEnabled || myTimeout == undefined) return;
+  if(typeof window.getRandomStyle == "undefined" || typeof adBlockEnabled == "undefined" || adBlockEnabled || typeof myTimeout != "undefined") return;
   let buttonQuality = document.getElementById("button-quality");
   if(!buttonQuality) return;
   let current = scals[`${scale}`];
