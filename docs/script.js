@@ -2456,7 +2456,7 @@ function toggleQuality() {
     return;
   }
   scale = next.scale;
-  currentScaleId = next.nextId;
+  currentScaleId = current.nextId;
   buttonQuality.innerHTML = `Image quality: ${next.name}`
   alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b>`);
 }
