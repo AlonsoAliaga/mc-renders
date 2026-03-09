@@ -2458,7 +2458,7 @@ function toggleQuality() {
   scale = next.scale;
   currentScaleId = current.nextId;
   buttonQuality.innerHTML = `Image quality: ${next.name}`
-  alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b>`);
+  alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b><br>⚠️ Higher qualities might take longer to load! ⚠️`);
 }
 loadListener();
 function lockModels(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/lock-icon.png') {
