@@ -1580,6 +1580,7 @@ async function updateModel(username) {
         url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
         url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}&renderScale=${scale}`).replace(/{crop}/g, currentCrop);
       }
+      showLoading(`⌛ Your model is loading!<br>Please wait!`);
       try {
         let imageBuffer = await loadImage(url);
         modelsCache.set(modelKey, imageBuffer);
@@ -1588,6 +1589,7 @@ async function updateModel(username) {
         console.log(`Error getting image?: ${e.message}`);
         return;
       }
+      showLoaded(`✅ Model successfully loaded!<br>You can now download it!`);
     }
   }
 
@@ -1924,6 +1926,31 @@ function uploadCustomSkinTexture(event) {
   document.body.removeChild(uploadInput);
 }
 let errorTimeout = undefined;
+let loadingTimeout = undefined;
+function showLoading(text = "Empty") {
+  //console.log(`Alerting: ${text}`)
+  if(loadingTimeout) {
+    clearTimeout(loadingTimeout);
+    var sb = document.getElementById("snackbar-loading");
+    sb.className = sb.className.replace("show", "");
+  }
+  var sb = document.getElementById("snackbar-loading");
+  sb.innerHTML = text;
+  //this is where the class name will be added & removed to activate the css
+  sb.className = "show";
+
+  loadingTimeout = setTimeout(()=>{ sb.className = sb.className.replace("show", ""); }, 60000);
+}
+function showLoaded(text = "Empty") {
+  if(loadingTimeout) {
+    clearTimeout(loadingTimeout);
+    var sb = document.getElementById("snackbar-loading");
+    sb.className = sb.className.replace("show", "");
+  }
+  sb.innerHTML = text;
+  sb.className = "show";
+  loadingTimeout = setTimeout(()=>{ sb.className = sb.className.replace("show", ""); }, 3000);
+}
 function alertError(text = "Empty error.") {
   //console.log(`Alerting: ${text}`)
   if(errorTimeout) {
@@ -2458,7 +2485,7 @@ function toggleQuality() {
   scale = next.scale;
   currentScaleId = current.nextId;
   buttonQuality.innerHTML = `Image quality: ${next.name}`
-  alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b><br>⚠️ Higher qualities might take longer to load! ⚠️`);
+  alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b><br><br>⚠️ Higher qualities might take longer to load! ⚠️`);
 }
 loadListener();
 function lockModels(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/lock-icon.png') {

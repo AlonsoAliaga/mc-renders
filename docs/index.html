@@ -60,6 +60,7 @@
             class="darkbuttonboxes" onclick="uploadCustomSkinTexture(this)">🌀 Upload<br>Custom Skin</button>
         </div>
         <span id="snackbar-error">Loading error..</span>
+        <span id="snackbar-loading">Loading error..</span>
         <input id="inputTextCooldown" style="text-align: center; color:gray; display: none; width: 300px; height: 30px; font-family: MinecraftBold; padding: 15px 20px 15px 20px; margin-bottom: 20px;"
           type="text" maxlength="20" checked id="darkmode" value="AlonsoAliaga" class="darkbuttonboxes"
           placeholder="Type your username" disabled="true"></input>
@@ -174,7 +175,18 @@
   <script src="autoresize.jquery.min.js"></script>
   <script src="js-yaml.min.js"></script>
   <script src="script.js?v=58"></script>
-
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+      // Ko-fi Widget
+      if (typeof kofiWidgetOverlay !== 'undefined') {
+          kofiWidgetOverlay.draw('alonsoaliaga', {
+              'type': 'floating-chat',
+              'floating-chat.donateButton.text': 'Send love ❤️',
+              'floating-chat.donateButton.background-color': '#fcbf47',
+              'floating-chat.donateButton.text-color': '#323842'
+          });
+      }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5185973148525065"
      crossorigin="anonymous"></script>
 
