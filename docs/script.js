@@ -1554,7 +1554,7 @@ async function updateModel(username) {
     additionalToUse = `skinUrl=${username}`;
     username = "AlonsoAliaga777"; 
   } else {
-    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$${scale}`;
+    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
   }
 
   let modelImage;
@@ -2294,7 +2294,7 @@ function selectModel(renderType) {
 
   if(globalModelsLock) {
     if(typeof loadedMainSkinBuffer != "undefined") {
-      let modelKey = `${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${renderType}$$$${targetCrop}`;
+      let modelKey = `${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${renderType}$$$${targetCrop}$$$${scale}`;
       
       if(!modelsCache.has(modelKey)) {
         //console.log(`[Not in cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
@@ -2303,7 +2303,7 @@ function selectModel(renderType) {
         //console.log(`[In cache - loadedMainSkinBuffer] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
       }
     } else {
-      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${renderType}$$$${targetCrop}`;
+      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${renderType}$$$${targetCrop}$$$${scale}`;
       
       if(!modelsCache.has(modelKey)) {
         //console.log(`[Not in cache - username] globalModelsLock: ${globalModelsLock} | ${renderType}$$$${targetCrop}`);
@@ -2335,13 +2335,13 @@ function selectModel(renderType) {
 
   if(typeof loadedMainSkinBuffer != "undefined") {
     updateModel(loadedMainSkinBuffer);
-    if(!modelsCache.has(`${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+    if(!modelsCache.has(`${loadedMainSkinBuffer.length >= 20 ? loadedMainSkinBuffer : loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`)) {
       lockModels(5);
       lockCrops(3);
     }
   } else {
     updateModel(lastSuccessUsername);
-    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`)) {
       lockModels(5);
       lockCrops(3);
     }
@@ -2367,12 +2367,12 @@ function pascalCase(crop) {
 function selectCrop(crop) {
   if(globalCropsLock) {
     if(typeof loadedMainSkinBuffer != "undefined") {
-      let modelKey = `${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      let modelKey = `${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
       if(!modelsCache.has(modelKey)) {
         return;
       }
     }else{
-      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`;
+      let modelKey = `${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
       if(!modelsCache.has(modelKey)) {
         return;
       }
@@ -2382,11 +2382,11 @@ function selectCrop(crop) {
   //console.log(`Crop selected: ${currentCrop} (${currentRenderType})`)
   updateModel(typeof loadedMainSkinBuffer != "undefined" ? loadedMainSkinBuffer : lastSuccessUsername);
   if(typeof loadedMainSkinBuffer != "undefined") {
-    if(!modelsCache.has(`${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+    if(!modelsCache.has(`${loadedMainSkinBuffer.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`)) {
       lockCrops(5);
     }
   }else{
-    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}`)) {
+    if(!modelsCache.has(`${lastSuccessUsername.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`)) {
       lockCrops(5);
     }
   }
@@ -2408,6 +2408,48 @@ function loadListener() {
       }
     }
   });
+}
+let scals = {
+  "0": {
+    name: "Normal 👾",
+    next: 3
+  },
+  "3": {
+    name: "High quality 🔎",
+    next: 5
+  },
+  "5": {
+    name: "High definition 💎",
+    next: 8
+  },
+  "8": {
+    name: "2K 🪞",
+    next: 12
+  },
+  "12": {
+    name: "4K 🧪",
+    next: 0
+  }
+}
+function toggleQuality() {
+  if(typeof window.getRandomStyle == "undefined" && typeof adBlockEnabled == "undefined" || adBlockEnabled || myTimeout == undefined) return;
+  let buttonQuality = document.getElementById("button-quality");
+  if(!buttonQuality) return;
+  let current = scals[`${scale}`];
+  if(typeof current == "undefined") {
+    scale = 0;
+    buttonQuality.innerHTML = `Image quality: Normal 👾`
+    return;
+  }
+  let next = scals[`${current.next}`];
+  if(typeof current == "undefined") {
+    scale = 0;
+    buttonQuality.innerHTML = `Image quality: Normal 👾`
+    return;
+  }
+  scale = next.next;
+  buttonQuality.innerHTML = `Image quality: ${next.name}`
+  alertError(`Image quality updated to ${next.name}<br><b>Select the model again!</b>`);
 }
 loadListener();
 function lockModels(secs, iconUrl='https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/lock-icon.png') {
@@ -2517,4 +2559,5 @@ function processAds() {
   lockModelsWithMessage(adLockedModels,"adlocked",`Disable AdBlock to unlock this model!`)
   lockElementWithMessage(document.getElementById("button-toggle-custom-gradient-div"),"adlockedfit",`Disable AdBlock to use custom gradients!`)
   lockElementWithMessage(document.getElementById("customskindiv"),"adlockedsmall",`Disable AdBlock to use custom skin texture!`)
+  lockElementWithMessage(document.getElementById("button-quality-div"),"adlockedsmall",`Disable AdBlock to access better quality image!`)
 }
