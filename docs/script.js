@@ -691,7 +691,7 @@ function unmarkAll() {
 function test() {
   console.log("TESTING WORKS!")
 }
-let  buttonsToToggleDarkMode = ["appearance","inputText","download-all","colors-amount","button-toggle-custom-gradient-div",
+let  buttonsToToggleDarkMode = ["appearance","inputText","download-all","colors-amount","button-toggle-custom-gradient-div","button-quality",
 "button-remove-watermark-download-div","button-custom-background-div","button-revert-skin-div","button-shadow-div","button-no-background-div",
 "customskindiv","button-pixelate-background-div"];
 function toggleDarkmode() {
