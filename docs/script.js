@@ -436,7 +436,7 @@ const models = {
   },
   "bitzel": {
     image: "bitzel.png",
-    name: "Bitzel<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    name: "Bitzel",
     is2D: true,
     crops: [
       "full",
@@ -446,7 +446,7 @@ const models = {
   },
   "pixel": {
     image: "pixel.png",
-    name: "Pixel<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    name: "Pixel",
     is2D: true,
     crops: [
       "full",
@@ -456,7 +456,7 @@ const models = {
   },
   "ornament": {
     image: "ornament.png",
-    name: "Ornament<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    name: "Ornament",
     is2D: true,
     crops: [
       "full"
@@ -464,7 +464,7 @@ const models = {
   },
   "profile": {
     image: "profile.png",
-    name: "Profile<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    name: "Profile",
     is2D: true,
     crops: [
       "full",
