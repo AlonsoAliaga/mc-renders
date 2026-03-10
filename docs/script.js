@@ -436,7 +436,7 @@ const models = {
   },
   "bitzel": {
     image: "bitzel.png",
-    name: "Bitzel",
+    name: "Bitzel<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "full",
       "bust",
@@ -445,7 +445,7 @@ const models = {
   },
   "pixel": {
     image: "pixel.png",
-    name: "Pixel",
+    name: "Pixel<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "full",
       "bust",
@@ -454,14 +454,14 @@ const models = {
   },
   "ornament": {
     image: "ornament.png",
-    name: "Ornament",
+    name: "Ornament<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "full"
     ]
   },
   "profile": {
     image: "profile.png",
-    name: "Profile",
+    name: "Profile<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "full",
       "bust",
@@ -497,20 +497,20 @@ const models = {
       "None available"
     ]
   },
-  "custom-4": {
-    custom: true,
-    url: `aHR0cHM6Ly9yZW5kZXIuc2tpbm1jLm5ldC8zZC5waHA/dXNlcj17dXNlcm5hbWV9JnZyPTgmaHIwJmhyaD0tMzkmYWE9JmhlYWRPbmx5PXRydWUmcmF0aW89NTAucG5n`,
-    image: "custom/custom-4.png",
-    name: "Cube Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
-    crops: [
-      "None available"
-    ]
-  },
+  // "custom-4": {
+  //   custom: true,
+  //   url: `aHR0cHM6Ly9yZW5kZXIuc2tpbm1jLm5ldC8zZC5waHA/dXNlcj17dXNlcm5hbWV9JnZyPTgmaHIwJmhyaD0tMzkmYWE9JmhlYWRPbmx5PXRydWUmcmF0aW89NTAucG5n`,
+  //   image: "custom/custom-4.png",
+  //   name: "Cube Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small><br><small><small><small>❌ Might not work sometimes. Try later.</small></small></small>",
+  //   crops: [
+  //     "None available"
+  //   ]
+  // },
   "custom-5": {
     custom: true,
     url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9L3t1c2VybmFtZX17YWRkaXRpb25hbH0=`,
     image: "custom/custom-5.png",
-    name: "Wallpaper Render",
+    name: "Wallpaper Render<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "herobrine_hill",
       "quick_hide",
@@ -524,7 +524,7 @@ const models = {
     url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1e2FkZGl0aW9uYWx9`,
     //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1`,
     image: "custom/custom-6.png",
-    name: "Friend Herobrine",
+    name: "Friend Herobrine<br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "full",
       "bust",
