@@ -536,7 +536,7 @@ ul {
 #snackbar-loading {
   visibility: hidden;
   color: #fff;
-  background-color: #160385;
+  background-color: #673AB7;
   min-width: 250px;
   margin-left: -125px;
   border-radius: 2px;
@@ -565,7 +565,7 @@ ul {
 #snackbar-loading.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 30s;
 }
 /* Animations for fading in and out */
 @-webkit-keyframes fadein {
