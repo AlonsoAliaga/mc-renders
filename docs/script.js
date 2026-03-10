@@ -1583,7 +1583,7 @@ async function updateModel(username) {
         }
       } else {
         url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
-        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}&renderScale=${scale}`).replace(/{crop}/g, currentCrop);
+        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}${(modelData.is2D ? `&cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `&renderScale=${scale}`)}`).replace(/{crop}/g, currentCrop);
       }
       showLoading(`⌛ Your model is loading!<br>Please wait!`);
       try {
