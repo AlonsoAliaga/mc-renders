@@ -483,7 +483,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvYXZhdGFyL3t1c2VybmFtZX0vMzAw`,
     image: "custom/custom-2.png",
-    name: "Pixel Head<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Pixel Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "None available"
     ]
@@ -492,7 +492,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvaGVhZC97dXNlcm5hbWV9`,
     image: "custom/custom-3.png",
-    name: "Isometric Head<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Isometric Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "None available"
     ]
@@ -501,7 +501,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9yZW5kZXIuc2tpbm1jLm5ldC8zZC5waHA/dXNlcj17dXNlcm5hbWV9JnZyPTgmaHIwJmhyaD0tMzkmYWE9JmhlYWRPbmx5PXRydWUmcmF0aW89NTAucG5n`,
     image: "custom/custom-4.png",
-    name: "Cube Head<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Cube Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     crops: [
       "None available"
     ]
@@ -560,7 +560,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9idXN0L3t1dWlkfQ==`,
     image: "custom/custom-9.png",
-    name: "Bust 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Bust 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
     ]
@@ -569,7 +569,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2Zyb250L3t1dWlkfQ==`,
     image: "custom/custom-10.png",
-    name: "Front 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Front 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -579,7 +579,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2JhY2sve3V1aWR9`,
     image: "custom/custom-11.png",
-    name: "Back 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Back 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -589,7 +589,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L3NpZGUve3V1aWR9`,
     image: "custom/custom-12.png",
-    name: "Isometric Side 3D<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Isometric Side 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -599,7 +599,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9iYWNrL3t1dWlkfQ==`,
     image: "custom/custom-13.png",
-    name: "Pixel (back)<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Pixel (back)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -609,7 +609,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9sZWZ0L3t1dWlkfQ==`,
     image: "custom/custom-14.png",
-    name: "Pixel (left)<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Pixel (left)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -619,7 +619,7 @@ const models = {
     custom: true,
     url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9yaWdodC97dXVpZH0=`,
     image: "custom/custom-15.png",
-    name: "Pixel (right)<br><small><small>❌ Not supported with custom skin</small></small>",
+    name: "Pixel (right)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -1574,7 +1574,7 @@ async function updateModel(username) {
         if(url.endsWith(`${username}{additional}`)) {
           url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop) + "&renderScale="+scale;
         } else {
-          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop) + "&renderScale="+scale;
+          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop);
         }
       } else {
         url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
