@@ -437,6 +437,7 @@ const models = {
   "bitzel": {
     image: "bitzel.png",
     name: "Bitzel<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    is2D: true,
     crops: [
       "full",
       "bust",
@@ -446,6 +447,7 @@ const models = {
   "pixel": {
     image: "pixel.png",
     name: "Pixel<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    is2D: true,
     crops: [
       "full",
       "bust",
@@ -455,6 +457,7 @@ const models = {
   "ornament": {
     image: "ornament.png",
     name: "Ornament<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    is2D: true,
     crops: [
       "full"
     ]
@@ -462,6 +465,7 @@ const models = {
   "profile": {
     image: "profile.png",
     name: "Profile<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    is2D: true,
     crops: [
       "full",
       "bust",
@@ -509,6 +513,7 @@ const models = {
   "custom-5": {
     custom: true,
     url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9L3t1c2VybmFtZX17YWRkaXRpb25hbH0=`,
+    is2D: true,
     image: "custom/custom-5.png",
     name: "Wallpaper Render<br><small><small><small>❌ Not supported with image quality</small></small></small>",
     crops: [
@@ -1572,7 +1577,7 @@ async function updateModel(username) {
         if(modelData.uuid) url = url.replace(/{uuid}/g, cacheUserUUID.get(username.toLowerCase()) || "");
         url = url.replace(/{username}/g, username).replace(/{crop}/g, currentCrop);
         if(url.endsWith(`${username}{additional}`)) {
-          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop) + "&renderScale="+scale;
+          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop) + (modelData.is2D ? `&cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `&renderScale=${scale}`);
         } else {
           url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop);
         }
