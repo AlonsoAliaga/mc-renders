@@ -778,6 +778,16 @@ ul {
 .locked {
   position: relative;
 }
+.corner-label {
+  content: "❌ RENDER NOT AVAILABLE!";
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  background: #ff0000;
+  color: white;
+  padding: 4px 10px;
+  font-size: 15px;
+}
 .locked .overlay {
   position: absolute;
   inset: 0;

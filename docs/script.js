@@ -600,6 +600,16 @@ const models = {
       "Not available"
     ]
   },
+  "custom-16": {
+    custom: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9mcm9udC97dXVpZH0=`,
+    image: "custom/custom-16.png",
+    name: "Pixel (front)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ]
+  },
   "custom-13": {
     custom: true,
     url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9iYWNrL3t1dWlkfQ==`,
@@ -1195,17 +1205,34 @@ async function processUsername(order) {
   let username = usernameInput?.value || "AlonsoAliaga";
   let fullSkin;
   let inCache = cacheSkins.has(username.toLowerCase());
+  console.log(`Processing username: ${username} (in cache: ${inCache})`);
   if(inCache) {
     fullSkin = cacheSkins.get(username.toLowerCase());
     loadedSkinBuffer = fullSkin;
   }else{
     //let url = `https://minotar.net/skin/${username}.png`;
-    let starUrl = `https://starlightskins.lunareclipse.studio/render/default/${username}/full`
+    let pbUrl = `https://playerdb.co/api/player/minecraft/${username}`;
+    //let starUrl = `https://starlightskins.lunareclipse.studio/render/default/${username}/full`
+    let fetchedData = undefined;
     try{
-      let response = await fetch(starUrl);
+      let response = await fetch(pbUrl);
       if(response.ok) {
-        console.log(`Username ${username} is valid!`)
-        lastSuccessUsername = username;
+        let data = await response.json();
+        if(data && data.success) {
+          console.log(`Username ${username} is valid!`)
+          lastSuccessUsername = username;
+          console.log(data);
+          console.log(data.data.player);
+          if(username != data.data.player.username) {
+            console.log(`Username case mismatch: ${username} -> ${data.data.player.username}`);
+            username = data.data.player.username;
+          }
+          fetchedData = data;
+        }else{
+          console.log(`Username ${username} is NOT valid!`)
+          username = "AlonsoAliaga";
+          lastSuccessUsername = username;
+        }
       }else{
         console.log(`Username ${username} is NOT valid!`)
         username = "AlonsoAliaga";
@@ -1216,18 +1243,26 @@ async function processUsername(order) {
     }
     if(!cacheUserUUID.has(username.toLowerCase())) {
       try {
+        if(fetchedData) {
+          console.log(fetchedData);
+          lastUsernameToUUID = fetchedData.data.player.username;
+          lastObtainedUUID = fetchedData.data.player.id;
+          cacheUserUUID.set(lastUsernameToUUID.toLowerCase(),lastObtainedUUID);
+          console.log(`Valid uuid saved in cache: ${username} -> ${cacheUserUUID.get(username.toLowerCase())}`);
+        }else{
+          lastUsernameToUUID = undefined;
+          lastObtainedUUID = undefined;
+          console.log("An error occurred: Fetched data is invalid or null");
+        }
+        /*
         const response = await fetch(`https://api.minetools.eu/uuid/${username}`);
         const parsed = await response.json();
-        /*
-        console.log(content);
-        const decoded = atob(content.content);
-        const parsed = JSON.parse(decoded);
-        */
         console.log(parsed);
         lastUsernameToUUID = parsed.name;
         lastObtainedUUID = parsed.id;
         cacheUserUUID.set(parsed.name.toLowerCase(),parsed.id);
         console.log(`Valid uuid saved in cache: ${username} -> ${cacheUserUUID.get(username.toLowerCase())}`);
+        */
       } catch (error) {
         lastUsernameToUUID = undefined;
         lastObtainedUUID = undefined;
@@ -2229,6 +2264,7 @@ function loadModels() {
     element.classList.add("render-card");
     let link = renderData.image ? `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/renders/${renderData.image}` : `https://starlightskins.lunareclipse.studio/render/${renderType}/AlonsoAliaga/${renderData.crops[0]}`;
     element.dataset.modelUrl = link;
+    //element.dataset.isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlbGNsaXBzZQ=="));
     element.id = `model-${renderType}`
     element.innerHTML = `<img src="${link}" alt="${renderData.name} Model">
               <div class="render-label">${renderData.name}</div>`
@@ -2310,6 +2346,37 @@ function selectModel2(renderType) {
   }
 }
 */
+
+let apiCheckingInterval = undefined;
+function startApiChecking() {
+    if(apiCheckingInterval) return;
+    addLog("Starting periodic API connectivity checks...");
+    apiCheckingInterval = setInterval(() => {
+        fetch("https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed")
+        .then(res => {
+            if(res.ok) {
+                notReachable = false;
+                clearInterval(apiCheckingInterval);
+                apiCheckingInterval = undefined;
+                addLog("API is reachable again. Resuming normal operations.");
+                startApiChecking();
+            }
+        })
+        .catch(e => {
+            if(!notReachable) {
+                notReachable = true;
+                addLog("API became unreachable. Some features may not work until connection is restored.");
+            }else{
+                addLog("API is still unreachable...");
+            }
+        });
+    }, 30000); // Check every 30 seconds
+}
+function addLog(message) {
+    const time = new Date().toLocaleTimeString();
+    console.log(`[MC-Renders] [${time}] ${message}`);
+}
+let notReachable = false;
 function selectModel(renderType) {
   if(typeof adBlockEnabled == "undefined") {
     if(adLockedModels.includes(renderType)) return;
@@ -2321,6 +2388,12 @@ function selectModel(renderType) {
   let renderData = models[renderType];
   if(!renderData) {
     console.log(`Invalid render type?`);
+    return;
+  }
+  let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+  console.log(`Selected model: ${renderType} | Star API: ${isStarAPI} | API NOT reachable: ${notReachable} | Contains lunareclipse: 22`);
+  if(notReachable && isStarAPI) {
+    alertError(`<span style="font-size: 25px;"><b>❌ Sorry! The API used for rendering<br>these amazing models is not available! ❌</b></span><br><span style="font-size: 15px;">Please, be patient and try again later.</span><br><small>💡 This is not an issue in our site, we cannot fix it 😢</small>`);
     return;
   }
   let targetCrop = renderData.crops[0]; 
@@ -2564,7 +2637,33 @@ let myTimeout;
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('button').forEach(btn => lockModels(btn, 5));
 });
-document.addEventListener("DOMContentLoaded", () => {
+function lockInvalid() {
+  for(let renderType of Object.keys(models)) {
+    let renderData = models[renderType];
+    let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+    if(notReachable && isStarAPI) {
+      let element = document.getElementById(`model-${renderType}`);
+      if(element) {
+        let a = document.createElement('div');
+        a.innerHTML = `<span class="corner-label">RENDER TEMPORARILY⠀<br>❌ NOT AVAILABLE! ❌</span>`
+        element.appendChild(a);
+      }
+    }
+  }
+}
+document.addEventListener("DOMContentLoaded", async () => {
+  try{
+      await fetch("https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed");
+  }catch(e){
+      addLog("API is currently unreachable. Some features may not work until connection is restored.");
+      notReachable = true;
+      startApiChecking();
+      lockInvalid();
+      setTimeout(()=>{
+        selectModel("custom-10");
+        addLog("Selected backup model due to API unreachability.");
+      },5000);
+  }
   loadCounter();
   checkSite(window);
   setTimeout(()=>{
