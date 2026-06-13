@@ -2651,6 +2651,16 @@ function lockInvalid() {
     }
   }
 }
+function warnApiDown() {
+  if(notReachable) {
+    document.getElementById("bg-blur").style.display = "block";
+    document.getElementById("reminderModal").style.display = "block";
+  }
+}
+function closeReminder() {
+  document.getElementById("bg-blur").style.display = "none";
+  document.getElementById("reminderModal").style.display = "none";
+}
 document.addEventListener("DOMContentLoaded", async () => {
   try{
       await fetch("https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed");
@@ -2659,6 +2669,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       notReachable = true;
       startApiChecking();
       lockInvalid();
+      setTimeout(()=>{
+        warnApiDown();
+      },3000);
       setTimeout(()=>{
         selectModel("custom-10");
         addLog("Selected backup model due to API unreachability.");

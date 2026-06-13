@@ -788,6 +788,59 @@ ul {
   padding: 4px 10px;
   font-size: 15px;
 }
+.btn-custom {
+  font-family: 'MinecraftRegular';
+  border-radius: 25px;
+  border-color: var(--btn-border);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px 12px; 
+  cursor: pointer;
+  font-size: 16px; /* +2px (14->16) */
+  transition: transform 0.1s, filter 0.2s;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 30px; /* Adjusted height slightly for font */
+  white-space: nowrap; 
+}
+.reminder {
+  position:fixed;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50rem;
+  overflow:unset;
+  insert: 0;
+  top: 30%;
+  justify-self:center;
+  align-self:center;
+  padding: 1.5rem;
+  background-color: rgb(0 0 0 / 0.5);
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
+  --tw-border-opacity: 1;
+  border-color: rgb(85 85 85 / var(--tw-border-opacity, 1));
+  border-width: 2px;
+  border-radius: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.bg-black-blur {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  top: 0px;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .locked .overlay {
   position: absolute;
   inset: 0;

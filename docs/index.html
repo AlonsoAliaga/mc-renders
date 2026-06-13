@@ -170,7 +170,27 @@
       </div>
     </div>
   </div>
-
+  <div class="bg-black-blur" id="bg-blur" style="display: none;"></div>
+  <div id="reminderModal" class="reminder" style="display: none;">
+      <div class="bg-[#1c1c1c] border-2 border-[#555] rounded-xl p-6 pb-8 max-w-md w-[90%] shadow-2xl transform scale-95 transition-transform duration-300 relative">
+          <h3 style="font-size: 35px;" class="text-xl font-bold text-center mb-4" data-i18n="modal.title"><span class="rainbow">SOME RENDERS ARE</span><br>🚫 <span class="rainbow">NOT AVAILABLE!</span> 🥺</h3>
+          <p class="text-gray-300 text-center mb-6 text-base leading-relaxed" data-i18n="modal.text" style="font-size: 20px;"> <!-- text-sm -> text-base (16px) -->
+              <span class="font-bold" style="font-size: 30px;">We are sorry!</span><br>
+              It seems that the API used to render these amazing<br>renders is not available at this moment. <br>
+              <br>
+              This issue cannot be fixed by us, all we can<br>do is hope it gets resolved soon! 💎
+          </p>
+          <div class="flex justify-center">
+              <button onclick="closeReminder()" style="color:chartreuse;border-color: rgb(chartreuse / var(--tw-border-opacity, 1));" class="btn-custom bg-green-900/20 border-green-500 text-green-400 hover:bg-green-900/40 px-10 py-3 text-lg" data-i18n="modal.btn_got_it">
+                  Got it! I understand 👍
+              </button>
+          </div>
+          <br>
+          <div class="absolute bottom-1 left-0 w-full text-[12px] text-center opacity-40 italic" data-i18n="modal.footer"> <!-- 10->12 -->
+              This message will appear when the API is not available,<br>so you know when it's not available.
+          </div>
+      </div>
+  </div>
   <!-- <script src="jquery-1.6.1.min.js"></script> -->
   <script src="autoresize.jquery.min.js"></script>
   <script src="js-yaml.min.js"></script>
