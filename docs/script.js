@@ -2661,10 +2661,22 @@ function closeReminder() {
   document.getElementById("bg-blur").style.display = "none";
   document.getElementById("reminderModal").style.display = "none";
 }
+async function checkEndpoint() {
+  try {
+    const url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlv");
+    const response = await fetch(url);
+    if(response.ok) {
+      const data = await response.text();
+      if(data.toLowerCase().includes("online")) {
+        return true;
+      }
+    }
+  } catch (error) {}
+  return false;
+}
 document.addEventListener("DOMContentLoaded", async () => {
-  try{
-      await fetch("https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed");
-  }catch(e){
+  let available = await checkEndpoint();
+  if(!available) {
       addLog("API is currently unreachable. Some features may not work until connection is restored.");
       notReachable = true;
       startApiChecking();
