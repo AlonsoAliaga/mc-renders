@@ -474,7 +474,7 @@ const models = {
   },
   "custom-1": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve2Nyb3B9P3dpZGVNb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZzbGltTW9kZWw9aHR0cHM6Ly9jZG4ubHVuYXJlY2xpcHNlLnN0dWRpby9tb2RlbC5vYmomY2FtZXJhUG9zaXRpb249eyJ4IjoiLTQuOTQiLCJ5IjoiMzIuMDkiLCJ6IjoiLTIxLjYifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjMuNjciLCJ5IjoiMTYuMzEiLCJ6IjoiMy4zNSJ9e2FkZGl0aW9uYWx9`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vbW9kZWwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiItNC45NCIsInkiOiIzMi4wOSIsInoiOiItMjEuNiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMy42NyIsInkiOiIxNi4zMSIsInoiOiIzLjM1In17YWRkaXRpb25hbH0=`,
     image: "custom/custom-1.png",
     name: "How are you?",
     crops: [
@@ -485,7 +485,7 @@ const models = {
   },
   "custom-2": {
     custom: true,
-    url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvYXZhdGFyL3t1dWlkfS97c2l6ZX0=`,
+    url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvYXZhdGFyL3t1c2VybmFtZX0vMzAw`,
     image: "custom/custom-2.png",
     name: "Pixel Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     crops: [
@@ -494,7 +494,7 @@ const models = {
   },
   "custom-3": {
     custom: true,
-    url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvaGVhZC97dXNlcm5hbWV9L3tzaXplfQ`,
+    url: `aHR0cHM6Ly9tYy1oZWFkcy5uZXQvaGVhZC97dXNlcm5hbWV9`,
     image: "custom/custom-3.png",
     name: "Isometric Head<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     crops: [
@@ -512,7 +512,7 @@ const models = {
   // },
   "custom-5": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9e2FkZGl0aW9uYWx9`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxscGFwZXIve2Nyb3B9L3t1c2VybmFtZX17YWRkaXRpb25hbH0=`,
     is2D: true,
     image: "custom/custom-5.png",
     name: "Wallpaper Render<br><small><small><small>❌ Not supported with image quality</small></small></small>",
@@ -526,7 +526,7 @@ const models = {
   },
   "custom-6": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97Y3JvcH0/Y2FtZXJhUG9zaXRpb249eyJ4IjoiMjUuMjYiLCJ5IjoiMjkuMzQiLCJ6IjoiLTU0Ljk0In0mY2FtZXJhRm9jYWxQb2ludD17IngiOiIwLjg1IiwieSI6IjE2LjMyIiwieiI6Ii0wLjA4In0maXNvbWV0cmljPXRydWUmZGlyTGlnaHRQb3M9eyJ4IjoiLTEwIiwieSI6IjEwIiwieiI6Ii0xMCJ9JmRpckxpZ2h0Q29sb3I9MDA0MGZmJmdsb2JhbExpZ2h0Q29sb3I9ZmZmZmZmJnByb3BNb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3Byb3BUZXN0Lm9iaiZwcm9wVGV4dHVyZT1odHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU1ZDJlZDEzZDZiNTMyMGQwN2E4NDBkNTIyMmZiNTJmODU5MTI0ODNmZjZhNWI1YzQ2NzUxYWU0OTA0YzVkNGQmZ2xvYmFsTGlnaHRJbnRlbnNpdHk9LTAuMTUmZGlyTGlnaHRJbnRlbnNpdHk9MC41NXthZGRpdGlvbmFsfQ==`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1e2FkZGl0aW9uYWx9`,
     //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kdW5nZW9ucy97dXNlcm5hbWV9L3tjcm9wfT9jYW1lcmFQb3NpdGlvbj17IngiOiIyNS4yNiIsInkiOiIyOS4zNCIsInoiOiItNTQuOTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuODUiLCJ5IjoiMTYuMzIiLCJ6IjoiLTAuMDgifSZpc29tZXRyaWM9dHJ1ZSZkaXJMaWdodFBvcz17IngiOiItMTAiLCJ5IjoiMTAiLCJ6IjoiLTEwIn0mZGlyTGlnaHRDb2xvcj0wMDQwZmYmZ2xvYmFsTGlnaHRDb2xvcj1mZmZmZmYmcHJvcE1vZGVsPWh0dHBzOi8vY2RuLmx1bmFyZWNsaXBzZS5zdHVkaW8vcHJvcFRlc3Qub2JqJnByb3BUZXh0dXJlPWh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkMmVkMTNkNmI1MzIwZDA3YTg0MGQ1MjIyZmI1MmY4NTkxMjQ4M2ZmNmE1YjVjNDY3NTFhZTQ5MDRjNWQ0ZCZnbG9iYWxMaWdodEludGVuc2l0eT0tMC4xNSZkaXJMaWdodEludGVuc2l0eT0wLjU1`,
     image: "custom/custom-6.png",
     name: "Friend Herobrine<br><small><small><small>❌ Not supported with image quality</small></small></small>",
@@ -539,7 +539,7 @@ const models = {
   "custom-7": {
     restricted: true,
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve2Nyb3B9P3dpZGVNb2RlbD1odHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWxvbnNvQWxpYWdhL0Fsb25zb0FsaWFnYUFQSS9yZWZzL2hlYWRzL21haW4vcmVuZGVycy9sb29rLXRoZXJlLm9iaiZzbGltTW9kZWw9aHR0cHM6Ly9jZG4ubHVuYXJlY2xpcHNlLnN0dWRpby9tb2RlbC5vYmomY2FtZXJhUG9zaXRpb249eyJ4IjoiMzguNTUiLCJ5IjoiMy42NyIsInoiOiItNTAuNTQifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAuNDkiLCJ5IjoiMTYuNzkiLCJ6IjoiLTQuMTIifXthZGRpdGlvbmFsfQ==`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL2xvb2stdGhlcmUub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIzOC41NSIsInkiOiIzLjY3IiwieiI6Ii01MC41NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC40OSIsInkiOiIxNi43OSIsInoiOiItNC4xMiJ9e2FkZGl0aW9uYWx9`,
     //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL2xvb2stdGhlcmUub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIzOC41NSIsInkiOiIzLjY3IiwieiI6Ii01MC41NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC40OSIsInkiOiIxNi43OSIsInoiOiItNC4xMiJ9`,
     image: "custom/custom-7.png",
     name: "Look there! Is that a plane?",
@@ -551,7 +551,7 @@ const models = {
   },
   "custom-8": {
     custom: true,
-    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve2Nyb3B9P3dpZGVNb2RlbD1odHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWxvbnNvQWxpYWdhL0Fsb25zb0FsaWFnYUFQSS9yZWZzL2hlYWRzL21haW4vcmVuZGVycy95b3UtdG9vLXNtYWxsLm9iaiZzbGltTW9kZWw9aHR0cHM6Ly9jZG4ubHVuYXJlY2xpcHNlLnN0dWRpby9tb2RlbC5vYmomY2FtZXJhUG9zaXRpb249eyJ4IjoiMCIsInkiOiItMTUuOCIsInoiOiItMzYuNDIifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjAiLCJ5IjoiMTYuNTUiLCJ6IjoiMCJ9e2FkZGl0aW9uYWx9`,
+    url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3lvdS10b28tc21hbGwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIwIiwieSI6Ii0xNS44IiwieiI6Ii0zNi40MiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMCIsInkiOiIxNi41NSIsInoiOiIwIn17YWRkaXRpb25hbH0=`,
     //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20ve3VzZXJuYW1lfS97Y3JvcH0/d2lkZU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3lvdS10b28tc21hbGwub2JqJnNsaW1Nb2RlbD1odHRwczovL2Nkbi5sdW5hcmVjbGlwc2Uuc3R1ZGlvL21vZGVsLm9iaiZjYW1lcmFQb3NpdGlvbj17IngiOiIwIiwieSI6Ii0xNS44IiwieiI6Ii0zNi40MiJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMCIsInkiOiIxNi41NSIsInoiOiIwIn0=`,
     image: "custom/custom-8.png",
     name: "You are too small!",
@@ -563,8 +563,7 @@ const models = {
   },
   "custom-9": {
     custom: true,
-    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9idXN0L3t1dWlkfT9zY2FsZT17c2l6ZX0=`,
-    isStats: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9idXN0L3t1dWlkfQ==`,
     image: "custom/custom-9.png",
     name: "Bust 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -573,8 +572,7 @@ const models = {
   },
   "custom-10": {
     custom: true,
-    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2Zyb250L3t1dWlkfT9zY2FsZT17c2l6ZX0=`,
-    isStats: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2Zyb250L3t1dWlkfQ==`,
     image: "custom/custom-10.png",
     name: "Front 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -584,8 +582,7 @@ const models = {
   },
   "custom-11": {
     custom: true,
-    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2JhY2sve3V1aWR9P3NjYWxlPXtzaXplfQ==`,
-    isStats: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L2JhY2sve3V1aWR9`,
     image: "custom/custom-11.png",
     name: "Back 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -595,8 +592,7 @@ const models = {
   },
   "custom-12": {
     custom: true,
-    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L3NpZGUve3V1aWR9P3NjYWxlPXtzaXplfQ==`,
-    isStats: true,
+    url: `aHR0cHM6Ly9za2lucy5tY3N0YXRzLmNvbS9ib2R5L3NpZGUve3V1aWR9`,
     image: "custom/custom-12.png",
     name: "Isometric Side 3D<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -606,8 +602,7 @@ const models = {
   },
   "custom-16": {
     custom: true,
-    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9mcm9udC97dXVpZH0/c2NhbGU9e3NpemV9`,
-    isAtar: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9mcm9udC97dXVpZH0=`,
     image: "custom/custom-16.png",
     name: "Pixel (front)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -617,8 +612,7 @@ const models = {
   },
   "custom-13": {
     custom: true,
-    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9iYWNrL3t1dWlkfT9zY2FsZT17c2l6ZX0=`,
-    isAtar: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9iYWNrL3t1dWlkfQ==`,
     image: "custom/custom-13.png",
     name: "Pixel (back)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -628,19 +622,17 @@ const models = {
   },
   "custom-14": {
     custom: true,
-    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9sZWZ0L3t1dWlkfT9zY2FsZT17c2l6ZX0=`,
-    isAtar: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9sZWZ0L3t1dWlkfQ==`,
     image: "custom/custom-14.png",
     name: "Pixel (left)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
-      "Not available" 
+      "Not available"
     ]
   },
   "custom-15": {
     custom: true,
-    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9yaWdodC97dXVpZH0/c2NhbGU9e3NpemV9`,
-    isAtar: true,
+    url: `aHR0cHM6Ly9hcGkubWluZWF0YXIuaW8vYm9keS9yaWdodC97dXVpZH0=`,
     image: "custom/custom-15.png",
     name: "Pixel (right)<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
@@ -824,7 +816,6 @@ function checkSite(window) {
     }catch(e){}
   }
   setTimeout(()=>{
-    return;
     let href = window.location.href;
     if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw=="))) {
       try{document.title = `Page stolen from https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}`;}catch(e){}
@@ -1197,6 +1188,7 @@ window.onclick = function(event) {
   }
 }
 let loadedMainSkinBuffer = undefined;
+let loadedSkinBuffer = undefined;
 const usernameInput = document.getElementById('inputText');
 const usernameInputDiv = document.getElementById('inputTextDiv');
 const cacheSkins = new Map();
@@ -1207,28 +1199,20 @@ let lastObtainedUUID = undefined;
 let globalModelsLock = false;
 let globalCropsLock = false;
 let cacheUserUUID = new Map();
-let cacheUserData = new Map();
-//[PlayerName,UUID,SkinTextureUrl]
-async function alertUnexpectedError(message) {
-  alertError("❌⠀⠀⠀⠀⠀⠀⠀Unexpected error!⠀⠀⠀⠀⠀⠀⠀❌<br>Please try again later or contact the developer.<br><small><small>Error: "+message+"</small></small>");
-  //alert(`An unexpected error occurred!\n\nError: ${message}\n\nPlease try again later or contact the developer.`);
-}
-async function alertInvalidUsername() {
-  alertError("❌⠀⠀⠀⠀⠀⠀⠀Invalid username!⠀⠀⠀⠀⠀⠀⠀❌<br>Please check the spelling and try again.");
-  //alert(`Invalid username! Please check the spelling and try again.\n\nIf you think this is a mistake, please contact the developer.`);
-}
 async function processUsername(order) {
   skinType = 0;
   if(order != "no-cooldown") blockUsername(defaultCooldown);
   let username = usernameInput?.value || "AlonsoAliaga";
-  //let playerData;
-  let inCache = cacheUserData.has(username.toLowerCase());
+  let fullSkin;
+  let inCache = cacheSkins.has(username.toLowerCase());
   console.log(`Processing username: ${username} (in cache: ${inCache})`);
   if(inCache) {
-    //playerData = cacheUserData.get(username.toLowerCase());
-    lastSuccessUsername = cacheUserData.get(username.toLowerCase())[0];
+    fullSkin = cacheSkins.get(username.toLowerCase());
+    loadedSkinBuffer = fullSkin;
   }else{
+    //let url = `https://minotar.net/skin/${username}.png`;
     let pbUrl = `https://playerdb.co/api/player/minecraft/${username}`;
+    //let starUrl = `https://starlightskins.lunareclipse.studio/render/default/${username}/full`
     let fetchedData = undefined;
     try{
       let response = await fetch(pbUrl);
@@ -1236,32 +1220,27 @@ async function processUsername(order) {
         let data = await response.json();
         if(data && data.success) {
           console.log(`Username ${username} is valid!`)
+          lastSuccessUsername = username;
           console.log(data);
           console.log(data.data.player);
           if(username != data.data.player.username) {
             console.log(`Username case mismatch: ${username} -> ${data.data.player.username}`);
             username = data.data.player.username;
           }
-          lastSuccessUsername = username;
-          cacheUserData.set(username.toLowerCase(),[data.data.player.username,data.data.player.id,data.data.player.skin_texture]);
+          fetchedData = data;
         }else{
           console.log(`Username ${username} is NOT valid!`)
           username = "AlonsoAliaga";
-          alertInvalidUsername();
-          return;
+          lastSuccessUsername = username;
         }
       }else{
         console.log(`Username ${username} is NOT valid!`)
         username = "AlonsoAliaga";
-        alertInvalidUsername();
-        return;
+        lastSuccessUsername = username;
       }
     }catch(e) {
       console.log(`Error fetching ${username}: ${e.message}`)
-      alertUnexpectedError(e.message);
-      return;
     }
-    /*
     if(!cacheUserUUID.has(username.toLowerCase())) {
       try {
         if(fetchedData) {
@@ -1275,6 +1254,15 @@ async function processUsername(order) {
           lastObtainedUUID = undefined;
           console.log("An error occurred: Fetched data is invalid or null");
         }
+        /*
+        const response = await fetch(`https://api.minetools.eu/uuid/${username}`);
+        const parsed = await response.json();
+        console.log(parsed);
+        lastUsernameToUUID = parsed.name;
+        lastObtainedUUID = parsed.id;
+        cacheUserUUID.set(parsed.name.toLowerCase(),parsed.id);
+        console.log(`Valid uuid saved in cache: ${username} -> ${cacheUserUUID.get(username.toLowerCase())}`);
+        */
       } catch (error) {
         lastUsernameToUUID = undefined;
         lastObtainedUUID = undefined;
@@ -1283,11 +1271,61 @@ async function processUsername(order) {
     }else{
       console.log(`Username in cache: ${username} -> ${cacheUserUUID.get(username.toLowerCase())}`);
     }
+    /*
+    fetch(`https://api.minetools.eu/uuid/${username}`)
+    .then(res => res.json())
+    .then(content => {
+      console.log(content);
+      const decoded = atob(content.content);
+      const parsed = JSON.parse(decoded);
+      console.log(parsed);
+    });
+    try{
+      let uuidCheck = `https://api.minetools.eu/uuid/${username}`;
+      //let uuidCheck = `https://mc-api.io/profile/${username}/JAVA`;
+      let response = await fetch(uuidCheck);
+      console.log(response)
+      console.log(response.body)
+      console.log(response.response)
+      let d = JSON.parse(response.body);
+      if(d.status == "OK") {
+        lastUsernameToUUID = d.name;
+        lastObtainedUUID = d.id;
+        console.log(`[Success] Converted to UUID: ${lastUsernameToUUID} -> ${lastObtainedUUID}`)
+      }else{
+        lastUsernameToUUID = undefined;
+        lastObtainedUUID = undefined;
+        console.log(`[Null] Failed to convert to UUID: ${lastUsernameToUUID}`)
+      }
+    }catch(e) {
+      lastUsernameToUUID = undefined;
+      lastObtainedUUID = undefined;
+      console.log(`[Err] Failed to convert to UUID: ${lastUsernameToUUID}`)
+      console.log(e)
+    }
     */
     updateModel(username);
+    //updatePixelTest(username);
+    /*
+    try{
+      fullSkin = await loadImageWithCheck(url);
+      loadedSkinBuffer = fullSkin;
+      lastFailed = false;
+      updateTest(username);
+    }catch(e) {
+      lastFailed = true;
+      //console.log(`Detected error:`)
+      //console.log(e);
+      drawFailed();
+      updateTest();
+      return;
+    }
+    */
+    //cacheSkins.set(username.toLowerCase(),fullSkin);
   }
+  //Fetch skin logic
+  //updateSkin(inCache);
 }
-/*
 async function loadImageWithCheck(url) {
   let response = await fetch(url);
   if (!response.ok) {
@@ -1301,7 +1339,6 @@ async function loadImageWithCheck(url) {
     img.src = URL.createObjectURL(blob);
   });
 }
-*/
 function createGradient(ctx, colours) {
   if(!colours) {
     if(typeof defaultGradients[currentGradient] !== "undefined") {
@@ -1407,7 +1444,6 @@ let defaultAlonsoPixel;
 let defaultBgPixel;
 let defaultShadowPixel;
 let pixelCache = new Map();
-/*
 async function updatePixelTest(username) {
   const canvas = document.getElementById('test');
   if(document.getElementById("pixel-showcase-div").style.display == "none") {
@@ -1459,6 +1495,12 @@ async function updatePixelTest(username) {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     ctx.drawImage(defaultBgPixel, 0, 0);
     ctx.drawImage(imageToUse, 128, 64, 616, 1000, 75, 60, 151, 245);
+    /*
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(defaultShadowPixel, 0, 0, 300, 300);
+    */
     ctx.globalAlpha = 0.05;
     ctx.drawImage(logoBuffer,15,15,64,53);
     ctx.drawImage(logoBuffer,canvas.width - 79, canvas.height - 68,64,53);
@@ -1474,6 +1516,12 @@ async function updatePixelTest(username) {
       ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
       ctx.drawImage(defaultBgPixel, 0, 0);
       ctx.drawImage(img, 128, 64, 616, 1000, 75, 60, 151, 245);
+      /*
+      ctx.webkitImageSmoothingEnabled = false;
+      ctx.mozImageSmoothingEnabled = false;
+      ctx.imageSmoothingEnabled = false;
+      ctx.drawImage(defaultShadowPixel, 0, 0, 300, 300);
+      */
       ctx.globalAlpha = 0.05;
       ctx.drawImage(logoBuffer,15,15,64,53);
       ctx.drawImage(logoBuffer,canvas.width - 79, canvas.height - 68,64,53);
@@ -1488,8 +1536,6 @@ async function updatePixelTest(username) {
     img.src = link; // Replace with your image URL
   }
 }
-*/
-/*
 async function updateTest(username) {
   if(!document.getElementById("render-showcase-div")) return;
   if(document.getElementById("render-showcase-div").style.display == "none") {
@@ -1531,34 +1577,25 @@ async function updateTest(username) {
   }
   img.src = link; // Replace with your image URL
 }
-*/
 let currentScaleId = "normal";
 let scale = 1;
-async function updateModel(usernameToUse) {
+async function updateModel(username) {
   if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
-  if(typeof usernameToUse == "undefined") {
+  if(typeof username == "undefined") {
     if (typeof loadedMainSkinBuffer !== "undefined") {
-      usernameToUse = loadedMainSkinBuffer;
+      username = loadedMainSkinBuffer;
     } else {
-      usernameToUse = lastSuccessUsername;
+      username = lastSuccessUsername;
     }
   }
   let modelKey;
-  let additionalToJoin = [];
-  if(usernameToUse.length >= 20) {
-    modelKey = `${usernameToUse}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
-    additionalToJoin.push(`skinUrl=${usernameToUse}`);
-    usernameToUse = "AlonsoAliaga777"; 
+  let additionalToUse = "";
+  if(username.length >= 20) {
+    modelKey = `${username}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
+    additionalToUse = `skinUrl=${username}`;
+    username = "AlonsoAliaga777"; 
   } else {
-    let playerData = cacheUserData.get(usernameToUse.toLowerCase());
-    if(!playerData) {
-      //throw new Error(`PlayerData is undefined for ${usernameToUse}!`);
-      //alert(`This error is impossible to happen! Please contact the developer!`);
-      //alert(`PlayerData is undefined for ${usernameToUse}!`);
-      return;
-    }
-    modelKey = `${usernameToUse.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
-    additionalToJoin.push(`skinUrl=${playerData[2]}`);
+    modelKey = `${username.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
   }
 
   let modelImage;
@@ -1570,46 +1607,18 @@ async function updateModel(usernameToUse) {
       console.log(`UNKNOWN MODEL! HOW?`)
     } else {
       let url;
-      additionalToJoin.push(modelData.is2D ? `cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `renderScale=${scale}`);
       if(modelData.custom) {
-        url = atob(modelData.url).replace(/{crop}/g, currentCrop);;
-        if(url.includes("{uuid}")) {
-          console.log(`Username in cache: ${usernameToUse.toLowerCase()} -> ${cacheUserData.get(usernameToUse.toLowerCase())}`);
-          console.log(`Last success username in cache: ${lastSuccessUsername.toLowerCase()} -> ${cacheUserData.get(lastSuccessUsername.toLowerCase())}`);
-          let dataToUse = cacheUserData.get(usernameToUse.toLowerCase()) || cacheUserData.get(lastSuccessUsername.toLowerCase()) || ["e1c1a194-7e86-414f-86bb-42d82a21cfb8","e1c1a194-7e86-414f-86bb-42d82a21cfb8"];
-          url = url.replace(/{uuid}/g, dataToUse[1]);
-        }else if(url.includes("{username}")) {
-          url = url.replace(/{username}/g, lastSuccessUsername);
-        }
-        if(url.includes("{size}")) {
-          if(modelData.isStats) {
-            let scaleData = scals[currentScaleId];
-            if(!scaleData) scaleData = scals["normal"];
-            url = url.replace(/{size}/g, scaleData.statsScale);
-          }else if(modelData.isAtar) {
-            let scaleData = scals[currentScaleId];
-            if(!scaleData) scaleData = scals["normal"];
-            url = url.replace(/{size}/g, scaleData.statsAtar);
-          }else{
-            url = url.replace(/{size}/g, scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800)));
-          }
-        }
-        if(url.includes("{additional}")) {
-          if(url.includes("?")) {
-            url = url.replace(/{additional}/g, "&"+additionalToJoin.join("&"));
-          }else{
-            url = url.replace(/{additional}/g, "?"+additionalToJoin.join("&"));
-          }
+        url = atob(modelData.url);
+        if(modelData.uuid) url = url.replace(/{uuid}/g, cacheUserUUID.get(username.toLowerCase()) || "");
+        url = url.replace(/{username}/g, username).replace(/{crop}/g, currentCrop);
+        if(url.endsWith(`${username}{additional}`)) {
+          url = url.replace(/{additional}/g, `?${additionalToUse}`).replace(/{crop}/g, currentCrop) + (modelData.is2D ? `&cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `&renderScale=${scale}`);
+        } else {
+          url = url.replace(/{additional}/g, `&${additionalToUse}`).replace(/{crop}/g, currentCrop);
         }
       } else {
-        url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3tjcm9wfXthZGRpdGlvbmFsfQ==").replace(/{render_type}/g, currentRenderType).replace(/{crop}/g, currentCrop);
-        if(url.includes("{additional}")) {
-          if(url.includes("?")) {
-            url = url.replace(/{additional}/g, "&"+additionalToJoin.join("&"));
-          }else{
-            url = url.replace(/{additional}/g, "?"+additionalToJoin.join("&"));
-          }
-        }
+        url = atob("aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci97cmVuZGVyX3R5cGV9L3t1c2VybmFtZX0ve2Nyb3B9e2FkZGl0aW9uYWx9").replace(/{render_type}/g, currentRenderType);
+        url = url.replace(/{username}/g, username).replace(/{additional}/g, `?${additionalToUse}${(modelData.is2D ? `&cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `&renderScale=${scale}`)}`).replace(/{crop}/g, currentCrop);
       }
       showLoading(`⌛ Your model is loading!<br>Please wait!`);
       try {
@@ -1618,20 +1627,21 @@ async function updateModel(usernameToUse) {
         modelImage = imageBuffer;
       } catch(e) {
         console.log(`Error getting image?: ${e.message}`);
-        //alert(`An error occurred while loading the model!\n\nError: ${e.message}\n\nPlease try again later or contact the developer.`);
-        alertError(`❌ Model couldn't be loaded!<br>Try again in some minutes!`);
         return;
       }
       showLoaded(`✅ Model successfully loaded!<br>You can now download it!`);
     }
   }
+
   let revertSkin = document.getElementById("button-revert-skin").checked;
+
   let finalRender = document.getElementById("final-canvas");
   let ctx = finalRender.getContext("2d");
   ctx.clearRect(0, 0, finalRender.width, finalRender.height);
   finalRender.width = modelImage.width;
   finalRender.height = modelImage.height;
   ctx = finalRender.getContext("2d");
+  
   if(revertSkin) {
     ctx.save();
     ctx.scale(-1, 1);
@@ -1640,13 +1650,12 @@ async function updateModel(usernameToUse) {
   } else {
     ctx.drawImage(modelImage, 0, 0);
   }
-  /*
+
   if(typeof lastObtainedUUID != "undefined") {
     console.log(`Obtained UUID is valid!`);
   } else {
     console.log(`Obtained UUID is NOT valid!`);
   }
-  */
 }
 async function updateModel3(username) {
   if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
@@ -1707,13 +1716,11 @@ async function updateModel3(username) {
   }else{
     ctx.drawImage(modelImage,0,0);
   }
-  /*
   if(typeof lastObtainedUUID != "undefined") {
     console.log(`Obtained UUID is valid!`);
   }else{
     console.log(`Obtained UUID is NOT valid!`);
   }
-  */
 }
 function updateSkin(inCache = true) {
   let username = usernameInput?.value || "AlonsoAliaga";
@@ -1886,12 +1893,9 @@ function uploadCustomSkinTexture(event) {
   if(typeof loadedMainSkinBuffer != "undefined") {
     //Remove custom skin
     loadedMainSkinBuffer = undefined;
-    if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
     lastSuccessUsername = "AlonsoAliaga";
-    document.getElementById("inputText").value = "AlonsoAliaga";
     document.getElementById("customskindiv").innerHTML = "🌀 Upload<br>Custom Skin";
-    updateModel(lastSuccessUsername)
-    //updateModel("AlonsoAliaga")
+    updateModel("AlonsoAliaga")
     return;
   }
   if(timeOnLoad + 1000 > Date.now()) {
@@ -1907,12 +1911,15 @@ function uploadCustomSkinTexture(event) {
   // Create a new input element
   const uploadInput = document.createElement('input');
   uploadInput.type = 'file';
+
   // Add event listener to handle file selection
   uploadInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
     // Handle the file upload or further processing here
+    
     // Create a FileReader object
     const reader = new FileReader();
+
     // Set up a load event listener on the FileReader
     reader.addEventListener('load', function() {
       // Update the image source with the uploaded image
@@ -2512,36 +2519,26 @@ let scals = {
   "normal": {
     name: "Normal 👾",
     scale: 1,
-    statsScale: 1,
-    statsAtar: 512,
     nextId: "hq",
   },
   "hq": {
     name: "High quality 🔎",
     scale: 3,
-    statsScale: 1.2,
-    statsAtar: 1024,
     nextId: "hd",
   },
   "hd": {
     name: "High definition 💎",
     scale: 5,
-    statsScale: 1.5,
-    statsAtar: 1920,
     nextId: "2k",
   },
   "2k": {
     name: "2K 🪞",
     scale: 8,
-    statsScale: 1.8,
-    statsAtar: 2048,
     nextId: "4k",
   },
   "4k": {
     name: "4K 🧪",
     scale: 12,
-    statsScale: 2,
-    statsAtar: 4096,
     nextId: "normal",
   }
 }
