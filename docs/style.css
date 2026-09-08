@@ -775,6 +775,41 @@ ul {
   opacity: 0.9;
 }
 
+#credits-overlay {
+  align-content: center;
+  justify-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#credits-overlay .overlay-content {
+  color: #ffffff;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#credits-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#credits-overlay p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
 .locked {
   position: relative;
 }

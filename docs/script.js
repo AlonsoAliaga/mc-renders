@@ -842,6 +842,14 @@ function checkSite(window) {
       document.getElementById("tools-for-you").innerHTML = toolsArray.join(`<br>`);
     });
 }
+function showCredits() {
+  let credits = document.getElementById("credits-overlay");
+  if(credits.style.display == "block") {
+    credits.style.display = "none";
+  } else {
+    credits.style.display = "block";
+  }
+}
 function selectTab(evt, tabName, buttonName) {
   // Declare all variables
   var i, tabcontent, tablinks;
