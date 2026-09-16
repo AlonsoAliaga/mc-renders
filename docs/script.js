@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22"];
 const models = {
   "default": {
     image: "default.png",
@@ -647,7 +647,349 @@ const models = {
     crops: [
       "Not available"
     ]
+  },
+  "custom-17": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0Q29wcGVyVXBkYXRlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper||Wallpapers 🖼️",
+    image: "custom/custom-17.png",
+    name: "Copper Update 🤖<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jaGVlcmluZy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImZGlyTGlnaHRDb2xvcj1mYzBmNmE=`,
+        x: 1626,
+        y: 849,
+        width: 726,
+        height: 1086
+      }
+    ]
+  },
+  "custom-18": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0VHJpYWxzVXBkYXRlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-18.png",
+    name: "Trials Update 🗝️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9hcmNoZXIvZnVsbD9za2luVXJsPXtza2luVXJsfSZyZW5kZXJTY2FsZT0yJmNhbWVyYVBvc2l0aW9uPXslMjJ4JTIyOiUyMjIwLjA1JTIyLCUyMnklMjI6JTIyMTUuOTglMjIsJTIyeiUyMjolMjItMTQuNDclMjJ9JmRpckxpZ2h0Q29sb3I9Nzg1NjAw`,
+        //url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9hcmNoZXIvZnVsbD9za2luVXJsPXtza2luVXJsfSZyZW5kZXJTY2FsZT0yJmNhbWVyYVBvc2l0aW9uPXsieCI6IjIwLjA1IiwieSI6IjE1Ljk4IiwieiI6Ii0xNC40NyJ9JmRpckxpZ2h0Q29sb3I9Nzg1NjAw`,
+        x: 255,
+        y: 634,
+        width: 873,
+        height: 1631
+      }
+    ]
+  },
+  "custom-21": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SGFiYm8uanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-21.png",
+    name: "Habbo Hotel 🏨<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9pc29tZXRyaWMvZnVsbD9za2luVXJsPXtza2luVXJsfSZyZW5kZXJTY2FsZT0wLjI1`,
+        x: 810,
+        y: 252,
+        width: 89,
+        height: 199,
+        border: "black 4 1"
+      }
+    ]
+  },
+  "custom-19": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0UG9ydHJhaXRTcGFjZS5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-19.png",
+    name: "Portrait Space 🚀<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9idXN0P3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImZGlyTGlnaHRDb2xvcj0wMzI0ZmM=`,
+        x: 623,
+        y: 478,
+        width: 2593,
+        height: 3175
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdFBvcnRyYWl0U3BhY2VCb3R0b20ucG5n`,
+        x: 1356,
+        y: 3465,
+        width: 1128,
+        height: 376
+      }
+    ],
+  },
+  "custom-20": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0UG9ydHJhaXRNdWx0aXZlcnNlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-20.png",
+    name: "Portrait Multiverse 🌌<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9idXN0P3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImZGlyTGlnaHRDb2xvcj1lZDAwZTE=`,
+        x: 623,
+        y: 478,
+        width: 2593,
+        height: 3175
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdFBvcnRyYWl0TXVsdGl2ZXJzZUJvdHRvbS5wbmc=`,
+        x: 1356,
+        y: 3465,
+        width: 1128,
+        height: 376
+      }
+    ]
+  },
+  "custom-23": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0UG9ydHJhaXRFYXJ0aC5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-23.png",
+    name: "Portrait Earth 🌍<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9idXN0P3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTgmZGlyTGlnaHRDb2xvcj0wMGJmZmY=`,
+        x: 623,
+        y: 478,
+        width: 2593,
+        height: 3175
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdFBvcnRyYWl0RWFydGhCb3R0b20ucG5n`,
+        x: 1356,
+        y: 3465,
+        width: 1128,
+        height: 376
+      }
+    ]
+  },
+  "custom-22": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWVycnlDaHJpc3RtYXNBbmRIYXBweU5ld1llYXIuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-22.png",
+    name: "Merry Christmas 🎄<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jcmlzc19jcm9zcy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTEmZGlyTGlnaHRDb2xvcj0wNTM3ZmY=`,
+        x: 646,
+        y: 1141,
+        width: 278,
+        height: 512,
+        colorize: "blue 0.2"
+      }
+    ]
   }
+}
+var geom = {};
+(function(){
+    geom.contour = function(grid, start){
+        var s = start || d3_geom_contourStart(grid), c = [], x = s[0], y = s[1], dx = 0, dy = 0, pdx = NaN, pdy = NaN, i = 0;
+        do {
+            i = 0;
+            if(grid(x-1, y-1)) i += 1;
+            if(grid(x, y-1)) i += 2;
+            if(grid(x-1, y)) i += 4;
+            if(grid(x, y)) i += 8;
+            if(i === 6){ dx = pdy === -1 ? -1 : 1; dy = 0; }
+            else if(i === 9){ dx = 0; dy = pdx === 1 ? -1 : 1; }
+            else { dx = d3_geom_contourDx[i]; dy = d3_geom_contourDy[i]; }
+            if(dx != pdx && dy != pdy){ c.push([x, y]); pdx = dx; pdy = dy; }
+            x += dx; y += dy;
+        } while(s[0] != x || s[1] != y);
+        return c;
+    };
+    var d3_geom_contourDx = [1, 0, 1, 1, -1, 0, -1, 1, 0, 0, 0, 0, -1, 0, -1, NaN];
+    var d3_geom_contourDy = [0, -1, 0, 0, 0, -1, 0, 0, 1, -1, 1, 1, 0, -1, 0, NaN];
+    function d3_geom_contourStart(grid){
+        var x = 0, y = 0;
+        while(true){
+            if(grid(x, y)) return [x, y];
+            if(x === 0){ x = y + 1; y = 0; }
+            else { x = x - 1; y = y + 1; }
+        }
+    }
+})();
+function generateSolidOverlay(imageBuffer, colorOptions) {
+  var params = colorOptions.split(" ");
+  var color = params[0] || "white";
+  var opacity = isNaN(params[1]) ? 0.5 : parseFloat(params[1]);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  ctx.globalCompositeOperation = 'source-in';
+
+  ctx.globalAlpha = opacity;
+  ctx.fillStyle = color;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 1.0;
+  return canvas;
+}
+function colorizeImage(imageBuffer, colorOptions) {
+  var params = colorOptions.split(" ");
+  var color = params[0] || "white";
+  var opacity = isNaN(params[1]) ? 0.5 : parseFloat(params[1]);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  ctx.globalCompositeOperation = 'source-atop';
+  ctx.globalAlpha = opacity;
+  ctx.fillStyle = color;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.globalCompositeOperation = 'destination-in';
+  ctx.globalAlpha = 1.0;
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  ctx.globalCompositeOperation = 'source-over';
+  
+  return canvas;
+}
+function addBorder(imageBuffer, borderOptions) {
+    var params = borderOptions.split(" ");
+    var strokeColor = params[0] || "white";
+    var strokeWeight = parseInt(params[1]) || 8;
+    var strokeOpacity = parseFloat(params[2]) || 1;
+
+    var cw = imageBuffer.width || imageBuffer.naturalWidth;
+    var ch = imageBuffer.height || imageBuffer.naturalHeight;
+    
+    var padding = strokeWeight;
+    var newWidth = cw + padding * 2;
+    var newHeight = ch + padding * 2;
+    
+    var workCanvas = document.createElement("canvas");
+    workCanvas.width = newWidth;
+    workCanvas.height = newHeight;
+    var ctx = workCanvas.getContext("2d");
+
+    ctx.drawImage(imageBuffer, padding, padding);
+
+    var canvases = [], imageData, data1;
+
+    var defineNonTransparent = function(x, y){ 
+        if(x < 0 || y < 0 || x >= newWidth || y >= newHeight) return false;
+        return (data1[(y * newWidth + x) * 4 + 3] > 0); 
+    };
+
+    while(moveDiscreteElementToNewCanvas()){}
+
+    var finalCanvas = document.createElement("canvas");
+    finalCanvas.width = newWidth;
+    finalCanvas.height = newHeight;
+    var finalCtx = finalCanvas.getContext("2d");
+
+    for(var i = 0; i < canvases.length; i++){
+        var pts = canvases[i].outlinePoints;
+        var ctx1 = canvases[i].getContext("2d");
+        
+        defineGeomPath(ctx1, pts);
+        ctx1.lineJoin = "round";
+        ctx1.lineCap = "round";
+        ctx1.strokeStyle = strokeColor;
+        ctx1.globalAlpha = strokeOpacity;
+        ctx1.lineWidth = strokeWeight;
+        ctx1.stroke();
+        ctx1.globalAlpha = 1;
+
+        finalCtx.drawImage(canvases[i], 0, 0);
+    }
+
+    finalCtx.drawImage(imageBuffer, padding, padding);
+
+    return finalCanvas;
+
+    function moveDiscreteElementToNewCanvas(){
+        imageData = ctx.getImageData(0, 0, newWidth, newHeight);
+        data1 = imageData.data;
+        var hit = false;
+        for(var i = 0; i < data1.length; i += 4){
+            if(data1[i + 3] > 0){ hit = true; break; }
+        }
+        if(!hit) return false;
+
+        var points = geom.contour(defineNonTransparent);
+        var newCanvas = document.createElement('canvas');
+        newCanvas.width = newWidth;
+        newCanvas.height = newHeight;
+        var newCtx = newCanvas.getContext('2d');
+        newCanvas.outlinePoints = points;
+
+        defineGeomPath(newCtx, points);
+        newCtx.save();
+        newCtx.clip();
+        newCtx.drawImage(workCanvas, 0, 0);
+        newCtx.restore();
+
+        defineGeomPath(ctx, points);
+        ctx.save();
+        ctx.clip();
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.clearRect(0, 0, newWidth, newHeight);
+        ctx.restore();
+
+        canvases.push(newCanvas);
+        return true;
+    }
+
+    function defineGeomPath(context, points){
+        context.beginPath();
+        context.moveTo(points[0][0], points[0][1]);
+        for(var i = 1; i < points.length; i++){ context.lineTo(points[i][0], points[i][1]); }
+        context.lineTo(points[0][0], points[0][1]);
+        context.closePath();
+    }
 }
 const modelsCache = new Map();
 const defaultCooldown = 10;
@@ -1538,6 +1880,9 @@ async function updateTest(username) {
   img.src = link; // Replace with your image URL
 }
 */
+function isLocal(location) {
+  return location.hostname.includes("0.0") || location.protocol == "file:";
+}
 let currentScaleId = "normal";
 let scale = 1;
 async function updateModel(usernameToUse) {
@@ -1551,9 +1896,11 @@ async function updateModel(usernameToUse) {
   }
   let modelKey;
   let additionalToJoin = [];
+  let skinUrl = undefined;
   if(usernameToUse.length >= 20) {
     modelKey = `${usernameToUse}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
     additionalToJoin.push(`skinUrl=${usernameToUse}`);
+    skinUrl = usernameToUse;
     usernameToUse = "AlonsoAliaga777"; 
   } else {
     let playerData = cacheUserData.get(usernameToUse.toLowerCase());
@@ -1565,8 +1912,9 @@ async function updateModel(usernameToUse) {
     }
     modelKey = `${usernameToUse.toLowerCase()}$$$${currentRenderType}$$$${currentCrop}$$$${scale}`;
     additionalToJoin.push(`skinUrl=${playerData[2]}`);
+    skinUrl = playerData[2];
   }
-
+  
   let modelImage;
   if(modelsCache.has(modelKey)) {
     modelImage = modelsCache.get(modelKey);
@@ -1578,7 +1926,20 @@ async function updateModel(usernameToUse) {
       let url;
       additionalToJoin.push(modelData.is2D ? `cameraWidth=${scale == 1 ? 800 : Math.max(800,Math.min(3840,(scale * 255) + 800))}` : `renderScale=${scale}`);
       if(modelData.custom) {
-        url = atob(modelData.url).replace(/{crop}/g, currentCrop);;
+        let theU;
+        try{
+          theU = atob(modelData.url)
+        }catch(e) {
+          theU = modelData.url;
+        }
+        if(!theU.startsWith("http")) {
+          if(isLocal(window.location)) {
+            theU = `../assets/images/${theU}`;
+          }else{
+            theU = `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/${theU}`
+          }
+        }
+        url = theU.replace(/{crop}/g, currentCrop);;
         if(url.includes("{uuid}")) {
           console.log(`Username in cache: ${usernameToUse.toLowerCase()} -> ${cacheUserData.get(usernameToUse.toLowerCase())}`);
           console.log(`Last success username in cache: ${lastSuccessUsername.toLowerCase()} -> ${cacheUserData.get(lastSuccessUsername.toLowerCase())}`);
@@ -1628,6 +1989,56 @@ async function updateModel(usernameToUse) {
         alertError(`❌ Model couldn't be loaded!<br>Try again in some minutes!`);
         return;
       }
+      if(modelData.custom && modelData.isRen) {
+        let toComposeCanvas = document.createElement("canvas");
+        toComposeCanvas.width = modelImage.width;
+        toComposeCanvas.height = modelImage.height;
+        let toComposeCtx = toComposeCanvas.getContext("2d");
+        toComposeCtx.drawImage(modelImage, 0, 0);
+        console.log(`Composing model with ${modelData.composition.length} images..`);
+        let i = 0;
+        for(let compositionData of modelData.composition) {
+          console.log(compositionData);
+          try{
+            let compositionUrl;
+            try{
+              compositionUrl = atob(compositionData.url);
+            }catch(e) {
+              compositionUrl = compositionData.url;
+            }
+            if(!compositionUrl.startsWith("http")) {
+              if(isLocal(window.location)) {
+                compositionUrl = `../assets/images/${compositionUrl}`;
+              }else{
+                compositionUrl = `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/${compositionUrl}`
+              }
+            }
+            console.log(`Loading composition image #${i}: ${compositionUrl.replace(/{skinUrl}/g,skinUrl)}`);
+            let imageComposite = await loadImage(compositionUrl.replace(/{skinUrl}/g,skinUrl));
+            if(typeof compositionData.border !== "undefined") {
+              imageComposite = addBorder(imageComposite, compositionData.border);
+            }
+            if(typeof compositionData.colorize !== "undefined") {
+              imageComposite = colorizeImage(imageComposite, compositionData.colorize);
+            }
+            if(typeof compositionData.overlay !== "undefined") {
+              imageComposite = generateSolidOverlay(imageComposite, compositionData.overlay);
+            }
+            toComposeCtx.drawImage(imageComposite, compositionData.x || 0, compositionData.y || 0, compositionData.width || imageComposite.width, compositionData.height || imageComposite.height);
+            console.log(`Composition image rendered successfully on x:${compositionData.x || 0} y:${compositionData.y || 0} width:${compositionData.width || imageComposite.width} height:${compositionData.height || imageComposite.height}`);
+          }catch(e) {
+            console.log(`Error loading composition image #${i}: ${e.message}`);
+          }
+          i++;
+        }
+        try{
+          modelImage = await canvasToImage(toComposeCanvas);
+          //modelImage = toComposeCtx.getImageData(0, 0, toComposeCanvas.width, toComposeCanvas.height).data.buffer;
+          modelsCache.set(modelKey, modelImage);
+        }catch(e) {
+          console.log(`Error getting buffer to assign new model image: ${e.message}`);
+        }
+      }
       showLoaded(`✅ Model successfully loaded!<br>You can now download it!`);
     }
   }
@@ -1653,6 +2064,14 @@ async function updateModel(usernameToUse) {
     console.log(`Obtained UUID is NOT valid!`);
   }
   */
+}
+function canvasToImage(canvas) {
+  return new Promise((resolve) => {
+    const dataUrl = canvas.toDataURL('image/png');
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.src = dataUrl;
+  });
 }
 async function updateModel3(username) {
   if(typeof lastSuccessUsername == "undefined") lastSuccessUsername = "AlonsoAliaga";
@@ -2254,14 +2673,26 @@ function runDelayed() {
   },500);
   */
 }
+function isStar(url) {
+  if(typeof url == "undefined") return true;
+  let de;
+  try{
+    de = atob(url);
+  }catch(e) {
+    de = url;
+  }
+  return de.includes(atob("bHVuYXJlY2xpcHNl"))
+}
 function loadModels() {
   let modelsDiv = document.getElementById("model-cards");
-  let toAddCustom = [];
+  let toAddMap = new Map();
+  let toAddNames = new Map();
+  //let toAddCustom = [];
   for(let renderType of Object.keys(models)) {
     let renderData = models[renderType];
     let element = document.createElement("div");
     element.classList.add("render-card");
-    let link = renderData.image ? `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/renders/${renderData.image}` : `https://starlightskins.lunareclipse.studio/render/${renderType}/AlonsoAliaga/${renderData.crops[0]}`;
+    let link = !isLocal(window.location) ? `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/main/assets/images/renders/${renderData.image}` : `../assets/images/renders/${renderData.image}`;
     element.dataset.modelUrl = link;
     //element.dataset.isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlbGNsaXBzZQ=="));
     element.id = `model-${renderType}`
@@ -2269,11 +2700,34 @@ function loadModels() {
               <div class="render-label">${renderData.name}</div>`
     element.onclick = function(){selectModel(renderType)}
     if(renderData.custom) {
-      toAddCustom.push(element);
+      let category;
+      if(renderData.category && renderData.category.includes("||")) {
+        let categories = renderData.category.split("||");
+        category = categories[0].trim();
+        toAddNames.set(category,categories[1]);
+        if(!toAddMap.has(category)) toAddMap.set(category,[]);
+        toAddMap.get(category).push(element);
+      }else{
+        category = renderData.category?.trim() || "others";
+        if(!toAddMap.has(category)) toAddMap.set(category,[]);
+        toAddMap.get(category).push(element);
+      }
     }else{
       modelsDiv.appendChild(element);
     }
   }
+  toAddMap.entries().forEach(([category, elements]) => {
+    let title = document.createElement("div");
+    title.innerText = toAddNames.get(category) || "Custom Models 🐦‍🔥";
+    title.style.fontSize = "50px";
+    title.style.fontWeight = "100px"
+    title.style.width = "100%";
+    modelsDiv.appendChild(title);
+    for(let toAdd of elements) {
+      modelsDiv.appendChild(toAdd);
+    }
+  });
+  /*
   if(toAddCustom.length >= 1) {
     let title = document.createElement("div");
     title.innerText = "CUSTOM MODELS";
@@ -2285,6 +2739,7 @@ function loadModels() {
       modelsDiv.appendChild(toAdd);
     }
   }
+  */
 }
 /*
 function selectModel2(renderType) {
@@ -2376,6 +2831,7 @@ function addLog(message) {
     console.log(`[MC-Renders] [${time}] ${message}`);
 }
 let notReachable = false;
+let disabled = ["custom-5"]
 function selectModel(renderType) {
   if(typeof adBlockEnabled == "undefined") {
     if(adLockedModels.includes(renderType)) return;
@@ -2389,7 +2845,12 @@ function selectModel(renderType) {
     console.log(`Invalid render type?`);
     return;
   }
-  let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+  if(disabled.includes(renderType)) {
+    alertError(`<span style="font-size: 25px;"><b>❌ Sorry! This render is not available<br>until further notice! ❌</b></span><br><span style="font-size: 15px;">Please, be patient and try again later.</span><br><small>💡 This is not an issue in our site, we cannot fix it 😢</small>`);
+    return;
+  }
+  //let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+  let isStarAPI = isStar(renderData.url) || containsStar(renderData.composition);
   console.log(`Selected model: ${renderType} | Star API: ${isStarAPI} | API NOT reachable: ${notReachable} | Contains lunareclipse: 22`);
   if(notReachable && isStarAPI) {
     alertError(`<span style="font-size: 25px;"><b>❌ Sorry! The API used for rendering<br>these amazing models is not available! ❌</b></span><br><span style="font-size: 15px;">Please, be patient and try again later.</span><br><small>💡 This is not an issue in our site, we cannot fix it 😢</small>`);
@@ -2649,8 +3110,16 @@ window.addEventListener('DOMContentLoaded', () => {
 function lockInvalid() {
   for(let renderType of Object.keys(models)) {
     let renderData = models[renderType];
-    let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+    //let isStarAPI = typeof renderData.url == "undefined" || atob(renderData.url).includes(atob("bHVuYXJlY2xpcHNl"));
+    let isStarAPI = isStar(renderData.url) || containsStar(renderData.composition);
     if(notReachable && isStarAPI) {
+      let element = document.getElementById(`model-${renderType}`);
+      if(element) {
+        let a = document.createElement('div');
+        a.innerHTML = `<span class="corner-label">RENDER TEMPORARILY⠀<br>❌ NOT AVAILABLE! ❌</span>`
+        element.appendChild(a);
+      }
+    }else if(disabled.includes(renderType)) {
       let element = document.getElementById(`model-${renderType}`);
       if(element) {
         let a = document.createElement('div');
@@ -2659,6 +3128,25 @@ function lockInvalid() {
       }
     }
   }
+}
+function lockNotWorking() {
+  for(let renderType of Object.keys(models)) {
+    if(disabled.includes(renderType)) {
+      let element = document.getElementById(`model-${renderType}`);
+      if(element) {
+        let a = document.createElement('div');
+        a.innerHTML = `<span class="corner-label">RENDER NOT AVAILABLE⠀<br>❌ UNTIL FURTHER NOTICE! ❌</span>`
+        element.appendChild(a);
+      }
+    }
+  }
+}
+function containsStar(array) {
+  if(typeof array == "undefined" || !Array.isArray(array)) return false;
+  for(let item of array) {
+    if(isStar(item.url)) return true;
+  }
+  return false;
 }
 function warnApiDown() {
   if(notReachable) {
@@ -2697,6 +3185,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         selectModel("custom-10");
         addLog("Selected backup model due to API unreachability.");
       },5000);
+  }else{
+    lockNotWorking();
   }
   loadCounter();
   checkSite(window);
