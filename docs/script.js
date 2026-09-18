@@ -818,6 +818,30 @@ const models = {
         colorize: "blue 0.2"
       }
     ]
+  },
+  "custom-24": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0V2hlYXRMYW5kc2NhcGUuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-24.png",
+    name: "Wheat Landscape 🌽<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20vZnVsbD9za2luVXJsPXtza2luVXJsfSZ3aWRlTW9kZWw9aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fsb25zb0FsaWFnYS9BbG9uc29BbGlhZ2FBUEkvcmVmcy9oZWFkcy9tYWluL3JlbmRlcnMvc2l0dGluZy5vYmomc2xpbU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3NpdHRpbmcub2JqJmNhbWVyYVBvc2l0aW9uPXsieCI6IjI3LjQ0IiwieSI6IjI5LjciLCJ6IjoiLTI3LjAxIn0mY2FtZXJhRm9jYWxQb2ludD17IngiOiItMS45OCIsInkiOiIxOC43MyIsInoiOiIwLjMzIn0mcmVuZGVyU2NhbGU9MiZkaXJMaWdodENvbG9yPWZmOTUwMA==`,
+        x: 621,
+        y: 378
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdFdoZWF0Qm90dG9tLnBuZw==`,
+        x: 734,
+        y: 1219
+      }
+    ]
   }
 }
 var geom = {};
@@ -1883,6 +1907,20 @@ async function updateTest(username) {
 function isLocal(location) {
   return location.hostname.includes("0.0") || location.protocol == "file:";
 }
+const EffectRegistry = {
+  border: addBorder,
+  colorize: colorizeImage,
+  overlay: generateSolidOverlay,
+  
+  crop: cropLayer,
+  glow: generateGlowEffect,
+  resize: resizeLayer,
+  chroma: applyChromaKey,
+  pixelate: pixelateLayer,
+  grayscale: convertToGrayscale,
+  brightness: adjustBrightness,
+  invert: invertLayer
+};
 let currentScaleId = "normal";
 let scale = 1;
 async function updateModel(usernameToUse) {
@@ -1996,6 +2034,86 @@ async function updateModel(usernameToUse) {
         let toComposeCtx = toComposeCanvas.getContext("2d");
         toComposeCtx.drawImage(modelImage, 0, 0);
         console.log(`Composing model with ${modelData.composition.length} images..`);
+
+        let i = 0;
+        for (let compositionData of modelData.composition) {
+          console.log(compositionData);
+          try {
+            let imageComposite;
+
+            const x = compositionData.x !== undefined ? compositionData.x : 0;
+            const y = compositionData.y !== undefined ? compositionData.y : 0;
+          
+            const isGlobal = compositionData.global === true;
+            const srcX = isGlobal ? 0 : x;
+            const srcY = isGlobal ? 0 : y;
+            const srcW = isGlobal ? toComposeCanvas.width : (compositionData.width !== undefined ? compositionData.width : toComposeCanvas.width);
+            const srcH = isGlobal ? toComposeCanvas.height : (compositionData.height !== undefined ? compositionData.height : toComposeCanvas.height);
+          
+            if (compositionData.url !== undefined) {
+              let compositionUrl;
+              try {
+                compositionUrl = atob(compositionData.url);
+              } catch (e) {
+                compositionUrl = compositionData.url;
+              }
+            
+              if (!compositionUrl.startsWith("http")) {
+                if (isLocal(window.location)) {
+                  compositionUrl = `../assets/images/${compositionUrl}`;
+                } else {
+                  compositionUrl = `https://githubusercontent.com{compositionUrl}`;
+                }
+              }
+            
+              const finalUrl = compositionUrl.replace(/{skinUrl}/g, skinUrl);
+              console.log(`Loading composition image #${i}: ${finalUrl}`);
+
+              imageComposite = await loadImage(finalUrl);
+            } else {
+              const tempCanvas = document.createElement('canvas');
+              tempCanvas.width = srcW;
+              tempCanvas.height = srcH;
+              const tempCtx = tempCanvas.getContext('2d');
+            
+              tempCtx.drawImage(toComposeCanvas, srcX, srcY, srcW, srcH, 0, 0, srcW, srcH);
+              imageComposite = tempCanvas;
+
+              console.log(`Applying global effects layer #${i} on canvas content`);
+            }
+          
+            const filtrosArray = Object.entries(compositionData);
+          
+            for (const [key, value] of filtrosArray) {
+              if (["url", "x", "y", "width", "height", "comment", "global"].includes(key) || value === undefined) {
+                continue;
+              }
+            
+              const effectFn = EffectRegistry[key];
+              if (effectFn) {
+                imageComposite = effectFn(imageComposite, value);
+              }
+            }
+          
+            const finalWidth = isGlobal ? imageComposite.width : (compositionData.width !== undefined ? compositionData.width : imageComposite.width);
+            const finalHeight = isGlobal ? imageComposite.height : (compositionData.height !== undefined ? compositionData.height : imageComposite.height);
+          
+            // 5. Renderizar el resultado procesado
+            if (isGlobal) {
+              toComposeCanvas.width = finalWidth;
+              toComposeCanvas.height = finalHeight;
+              toComposeCtx.drawImage(imageComposite, 0, 0);
+            } else {
+              toComposeCtx.drawImage(imageComposite, x, y, finalWidth, finalHeight);
+            }
+
+            console.log(`Composition image rendered successfully on x:${isGlobal ? 0 : x} y:${isGlobal ? 0 : y} width:${finalWidth} height:${finalHeight}`);
+          } catch (e) {
+            console.log(`Error loading composition image #${i}: ${e.message}`);
+          }
+          i++;
+        }
+        /*
         let i = 0;
         for(let compositionData of modelData.composition) {
           console.log(compositionData);
@@ -2025,12 +2143,15 @@ async function updateModel(usernameToUse) {
               imageComposite = generateSolidOverlay(imageComposite, compositionData.overlay);
             }
             toComposeCtx.drawImage(imageComposite, compositionData.x || 0, compositionData.y || 0, compositionData.width || imageComposite.width, compositionData.height || imageComposite.height);
+            
+            
             console.log(`Composition image rendered successfully on x:${compositionData.x || 0} y:${compositionData.y || 0} width:${compositionData.width || imageComposite.width} height:${compositionData.height || imageComposite.height}`);
           }catch(e) {
             console.log(`Error loading composition image #${i}: ${e.message}`);
           }
           i++;
         }
+        */
         try{
           modelImage = await canvasToImage(toComposeCanvas);
           //modelImage = toComposeCtx.getImageData(0, 0, toComposeCanvas.width, toComposeCanvas.height).data.buffer;
@@ -2064,6 +2185,193 @@ async function updateModel(usernameToUse) {
     console.log(`Obtained UUID is NOT valid!`);
   }
   */
+}
+function cropLayer(imageBuffer, args) {
+  const params = args.split(" ");
+  const x = parseInt(params[0]) || 0;
+  const y = parseInt(params[1]) || 0;
+  const w = parseInt(params[2]) || imageBuffer.width;
+  const h = parseInt(params[3]) || imageBuffer.height;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = w;
+  canvas.height = h;
+  const ctx = canvas.getContext('2d');
+
+  ctx.drawImage(imageBuffer, x, y, w, h, 0, 0, w, h);
+  return canvas;
+}
+
+function generateGlowEffect(imageBuffer, args) {
+  const params = args.split(" ");
+  const color = params[0] || "white";
+  const width = parseInt(params[1]) || 10;
+  const intensity = parseInt(params[2]) || 3;
+
+  const canvas = document.createElement('canvas');
+  // Añadimos margen extra para que el resplandor no se corte en los bordes
+  canvas.width = imageBuffer.width + (width * 2);
+  canvas.height = imageBuffer.height + (width * 2);
+  const ctx = canvas.getContext('2d');
+
+  ctx.shadowColor = color;
+  ctx.shadowBlur = width;
+
+  // Dibujamos la imagen múltiples veces de forma acumulativa para la intensidad
+  for (let i = 0; i < intensity; i++) {
+    ctx.drawImage(imageBuffer, width, width);
+  }
+
+  return canvas;
+}
+
+function resizeLayer(imageBuffer, args) {
+  const params = args.split(" ");
+  const w = parseInt(params[0]) || imageBuffer.width;
+  const h = parseInt(params[1]) || imageBuffer.height;
+  const smooth = params[2] !== "false"; // Por defecto true
+
+  const canvas = document.createElement('canvas');
+  canvas.width = w;
+  canvas.height = h;
+  const ctx = canvas.getContext('2d');
+
+  ctx.imageSmoothingEnabled = smooth;
+  ctx.drawImage(imageBuffer, 0, 0, w, h);
+  return canvas;
+}
+
+function applyChromaKey(imageBuffer, args) {
+  const params = args.split(" ");
+  const chromaColor = params[0] || "#00ff00";
+  const tolerance = parseInt(params[1]) || 20;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imgData.data;
+
+  // Parsear color HEX a RGB
+  const tempCtx = document.createElement('canvas').getContext('2d');
+  tempCtx.fillStyle = chromaColor;
+  const hex = tempCtx.fillStyle; // Convierte nombres como "green" a rgb/hex estándar
+  const rTarget = parseInt(hex.slice(1,3), 16);
+  const gTarget = parseInt(hex.slice(3,5), 16);
+  const bTarget = parseInt(hex.slice(5,7), 16);
+
+  for (let i = 0; i < data.length; i += 4) {
+    const r = data[i];
+    const g = data[i+1];
+    const b = data[i+2];
+
+    // Distancia Euclidiana de color
+    const diff = Math.sqrt((r-rTarget)**2 + (g-gTarget)**2 + (b-bTarget)**2);
+    if (diff < tolerance) {
+      data[i+3] = 0; // Hace el píxel transparente
+    }
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  return canvas;
+}
+
+function pixelateLayer(imageBuffer, args) {
+  const size = parseInt(args) || 4;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+
+  // Mini canvas temporal
+  const smallCanvas = document.createElement('canvas');
+  smallCanvas.width = Math.max(1, imageBuffer.width / size);
+  smallCanvas.height = Math.max(1, imageBuffer.height / size);
+  const smallCtx = smallCanvas.getContext('2d');
+
+  // Achicar imagen
+  smallCtx.drawImage(imageBuffer, 0, 0, smallCanvas.width, smallCanvas.height);
+
+  // Agrandar sin suavizado
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(smallCanvas, 0, 0, smallCanvas.width, smallCanvas.height, 0, 0, canvas.width, canvas.height);
+
+  return canvas;
+}
+
+function convertToGrayscale(imageBuffer, args) {
+  const factor = isNaN(args) ? 1.0 : parseFloat(args);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imgData.data;
+
+  for (let i = 0; i < data.length; i += 4) {
+    const r = data[i];
+    const g = data[i+1];
+    const b = data[i+2];
+    // Luminosidad estándar ITU-R BT.601
+    const gray = 0.299 * r + 0.587 * g + 0.114 * b;
+
+    data[i]   = r + (gray - r) * factor;
+    data[i+1] = g + (gray - g) * factor;
+    data[i+2] = b + (gray - b) * factor;
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  return canvas;
+}
+
+function adjustBrightness(imageBuffer, args) {
+  // 1.0 es normal, < 1.0 es oscuridad, > 1.0 es brillo
+  const factor = isNaN(args) ? 1.0 : parseFloat(args);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imgData.data;
+
+  for (let i = 0; i < data.length; i += 4) {
+    data[i]   = Math.min(255, Math.max(0, data[i] * factor));     // R
+    data[i+1] = Math.min(255, Math.max(0, data[i+1] * factor));   // G
+    data[i+2] = Math.min(255, Math.max(0, data[i+2] * factor));   // B
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  return canvas;
+}
+
+function invertLayer(imageBuffer, args) {
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imgData.data;
+
+  for (let i = 0; i < data.length; i += 4) {
+    data[i]   = 255 - data[i];     // Invertir R
+    data[i+1] = 255 - data[i+1];   // Invertir G
+    data[i+2] = 255 - data[i+2];   // Invertir B
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  return canvas;
 }
 function canvasToImage(canvas) {
   return new Promise((resolve) => {
