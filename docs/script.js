@@ -842,6 +842,49 @@ const models = {
         y: 1219
       }
     ]
+  },
+  "custom-25": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0THVzaENhdmUuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-25.png",
+    name: "Lush Cave 🪻<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9yZWxheGluZy9mdWxsP3NraW5Vcmw9aHR0cHM6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxZDE1YzFiNzQxMDU5N2EzNDZjMWZmMjljMDk3NmY5OTZkMjRiMTJjOGI5Y2ZlZDFjYjBkMDVmNzMyMjk1OSZyZW5kZXJTY2FsZT0yJmRpckxpZ2h0Q29sb3I9ZWJkODM0JmNhbWVyYVBvc2l0aW9uPXsieCI6Ii00Ni43OCIsInkiOiIxMS42MCIsInoiOiItNDAuMzAifSZjYW1lcmFGb2NhbFBvaW50PXsieCI6IjEuNDYiLCJ5IjoiMTcuMjEiLCJ6IjoiMC4wNCJ9`,
+        x: 1483,
+        y: 685,
+        width: 360,
+        height: 334
+      }
+    ]
+  },
+  "custom-26": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0TXlzdGljUnVpbnMuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-26.png",
+    name: "Mystic Ruins 🌀<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9kZWFkL2Z1bGw/c2tpblVybD17c2tpblVybH0mcmVuZGVyU2NhbGU9MSZkaXJMaWdodENvbG9yPWZmZjA2ZQ==`,
+        x: 1103,
+        y: 568,
+        width: 573,
+        height: 321,
+        tonality: "#f7ffcf 0.2"
+      }
+    ]
   }
 }
 var geom = {};
@@ -893,6 +936,32 @@ function generateSolidOverlay(imageBuffer, colorOptions) {
 
   ctx.globalCompositeOperation = 'source-over';
   ctx.globalAlpha = 1.0;
+  return canvas;
+}
+function applyTonality(imageBuffer, colorOptions) {
+  var params = colorOptions.split(" ");
+  var color = params[0] || "white";
+  var opacity = isNaN(params[1]) ? 1.0 : parseFloat(params[1]);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width;
+  canvas.height = imageBuffer.height;
+  const ctx = canvas.getContext('2d');
+
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  ctx.globalCompositeOperation = 'color';
+  ctx.globalAlpha = opacity;
+  ctx.fillStyle = color;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.globalCompositeOperation = 'destination-in';
+  ctx.globalAlpha = 1.0;
+  ctx.drawImage(imageBuffer, 0, 0);
+
+  // 4. Restaurar el contexto por seguridad
+  ctx.globalCompositeOperation = 'source-over';
+
   return canvas;
 }
 function colorizeImage(imageBuffer, colorOptions) {
@@ -1919,7 +1988,8 @@ const EffectRegistry = {
   pixelate: pixelateLayer,
   grayscale: convertToGrayscale,
   brightness: adjustBrightness,
-  invert: invertLayer
+  invert: invertLayer,
+  tonality: applyTonality
 };
 let currentScaleId = "normal";
 let scale = 1;
