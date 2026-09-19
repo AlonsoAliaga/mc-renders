@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29"];
 const models = {
   "default": {
     image: "default.png",
