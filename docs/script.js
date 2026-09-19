@@ -2172,7 +2172,7 @@ async function updateModel(usernameToUse) {
                 if (isLocal(window.location)) {
                   compositionUrl = `../assets/images/${compositionUrl}`;
                 } else {
-                  compositionUrl = `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/refs/heads/main/assets/images/{compositionUrl}`;
+                  compositionUrl = `https://raw.githubusercontent.com/AlonsoAliaga/mc-renders/refs/heads/main/assets/images/${compositionUrl}`;
                 }
               }
             
