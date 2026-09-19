@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29","custom-30","custom-31","custom-32","custom-33","custom-34","custom-35","custom-36","custom-37","custom-38","custom-39","custom-40"];
 const models = {
   "default": {
     image: "default.png",
@@ -883,6 +883,46 @@ const models = {
         width: 573,
         height: 321,
         tonality: "#f7ffcf 0.2"
+      }
+    ]
+  },
+  "custom-27": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0QW1ldGh5c3RCYXNlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-27.png",
+    name: "Amethyst Base 🪻<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jcmlzc19jcm9zcy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTEmZGlyTGlnaHRDb2xvcj1mZjI5OGQmY2FtZXJhUG9zaXRpb249eyJ4IjoiMjkuMDUiLCJ5IjoiMzAuNTEiLCJ6IjoiLTQ5LjEyIn0mY2FtZXJhRm9jYWxQb2ludD17IngiOiIwLjAwIiwieSI6IjEyLjAwIiwieiI6IjAuMDAifQ==`,
+        x: 1324,
+        y: 734
+      }
+    ]
+  },
+  "custom-28": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SnVuZ2xlQnJpZGdlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-28.png",
+    name: "Jungle Bridge 🦜<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9wb2ludGluZy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTMmZGlyTGlnaHRDb2xvcj1mZjI5OGQmY2FtZXJhUG9zaXRpb249eyJ4IjoiLTIuNjciLCJ5IjoiNjguODAiLCJ6IjoiMS44MyJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTIuMTYiLCJ5IjoiMTMuMjkiLCJ6IjoiLTkuMzUifQ==`,
+        x: 1048,
+        y: 1032,
+        width: 1450,
+        height: 1636
       }
     ]
   }
