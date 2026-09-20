@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29","custom-30","custom-31","custom-32","custom-33","custom-34","custom-35","custom-36","custom-37","custom-38","custom-39","custom-40"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29","custom-30","custom-31","custom-32","custom-33","custom-34","custom-35","custom-36","custom-37","custom-38","custom-39","custom-40","custom-41","custom-42","custom-43","custom-44","custom-45","custom-46","custom-47","custom-48","custom-49","custom-50"];
 const models = {
   "default": {
     image: "default.png",
@@ -819,6 +819,28 @@ const models = {
       }
     ]
   },
+  "custom-34": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0TXV0YW50Wm9tYmllLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-34.png",
+    name: "Mutant Zombie 🧟<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
+        x: 1143,
+        y: 841,
+        width: 530,
+        height: 968,
+        tonality: "#fdaa3d 0.2"
+      }
+    ]
+  },
   "custom-24": {
     custom: true,
     url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0V2hlYXRMYW5kc2NhcGUuanBn`,
@@ -905,6 +927,28 @@ const models = {
       }
     ]
   },
+  "custom-29": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0QW5jaWVudENpdHkuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-29.png",
+    name: "Ancient City 🏛️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
+        x: 1143,
+        y: 791,
+        width: 530,
+        height: 968,
+        tonality: "#0eb591 0.2"
+      }
+    ]
+  },
   "custom-28": {
     custom: true,
     url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SnVuZ2xlQnJpZGdlLmpwZw==`,
@@ -926,13 +970,13 @@ const models = {
       }
     ]
   },
-  "custom-29": {
+  "custom-33": {
     custom: true,
-    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0QW5jaWVudENpdHkuanBn`,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SHlkcmEuanBn`,
     isRen: true,
     category: "wallpaper",
-    image: "custom/custom-29.png",
-    name: "Ancient City 🏛️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    image: "custom/custom-33.png",
+    name: "Hydra Room 🐲<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
     uuid: true,
     crops: [
       "Not available"
@@ -944,7 +988,7 @@ const models = {
         y: 791,
         width: 530,
         height: 968,
-        tonality: "#0eb591 0.2"
+        tonality: "#00a884 0.2"
       }
     ]
   },
@@ -990,7 +1034,104 @@ const models = {
         height: 2075
       }
     ]
-  }
+  },
+  "custom-32": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0QWxjaGVtaXN0LmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-32.png",
+    name: "Alchemist 🧪<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jaGVlcmluZy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImZGlyTGlnaHRDb2xvcj1mZmYwMjQ=`,
+        x: 758,
+        y: 419,
+        width: 580,
+        height: 868
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdEFsY2hlbWlzdExheWVyLnBuZw==`,
+        x: 0,
+        y: 0
+      }
+    ]
+  },
+  "custom-35": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0T2JzaWRpYW5NYWdlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-35.png",
+    name: "Obsidian Mage 🧙<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
+        x: 1143,
+        y: 841,
+        width: 530,
+        height: 968,
+        tonality: "#9200cc 0.2"
+      }
+    ]
+  },
+  "custom-36": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0UmVkc3RvbmVMYWJvcmF0b3J5LmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-36.png",
+    name: "Redstone Laboratory 🧪<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jcm91Y2hpbmcvZnVsbD9za2luVXJsPXtza2luVXJsfSZyZW5kZXJTY2FsZT0xJmRpckxpZ2h0Q29sb3I9MzQ0Y2ViJmNhbWVyYVBvc2l0aW9uPXsieCI6Ii0zNi41MCIsInkiOiIyOC43MSIsInoiOiI0NC41OSJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiMC4wMCIsInkiOiIxMi4wMCIsInoiOiIwLjAwIn0=`,
+        x: 1509,
+        y: 642,
+        width: 140,
+        height: 222,
+        tonality: "#00e1ff 0.2"
+      }
+    ]
+  },
+  "custom-37": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0VGhlUHVycGxlUGFsYWRpbi5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-37.png",
+    name: "The Purple Paladin 🛡️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci93YWxraW5nL2Z1bGw/c2tpblVybD17c2tpblVybH0mcmVuZGVyU2NhbGU9MSZkaXJMaWdodENvbG9yPWZmZjAyNA==`,
+        x: 1443,
+        y: 516,
+        width: 460,
+        height: 738,
+        tonality: "#be6f26 0.15"
+      },
+      {
+        url: `bGF5ZXJzL01pbmVjcmFmdFRoZVB1cnBsZVBhbGFkaW5CbG9jay5wbmc=`,
+        x: 0,
+        y: 0
+      }
+    ]
+  },
 }
 var geom = {};
 (function(){
@@ -3316,14 +3457,15 @@ function addLog(message) {
 let notReachable = false;
 let disabled = ["custom-5"]
 function selectModel(renderType) {
+  let renderData = models[renderType];
+  let wallpaper = renderData?.category?.toLowerCase()?.includes("wallpaper") || false;
   if(typeof adBlockEnabled == "undefined") {
-    if(adLockedModels.includes(renderType)) return;
+    if(adLockedModels.includes(renderType) || wallpaper) return;
   }else {
     if(adBlockEnabled) {
-      if(adLockedModels.includes(renderType)) return;
+      if(adLockedModels.includes(renderType) || wallpaper) return;
     }
   }
-  let renderData = models[renderType];
   if(!renderData) {
     console.log(`Invalid render type?`);
     return;
