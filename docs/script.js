@@ -925,6 +925,71 @@ const models = {
         height: 1636
       }
     ]
+  },
+  "custom-29": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0QW5jaWVudENpdHkuanBn`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-29.png",
+    name: "Ancient City 🏛️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
+        x: 1143,
+        y: 791,
+        width: 530,
+        height: 968,
+        tonality: "#0eb591 0.2"
+      }
+    ]
+  },
+  "custom-30": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0R3JlZW5ob3VzZS5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-30.png",
+    name: "Greenhouse 🌸<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9zbGVlcGluZy9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTE=`,
+        x: 659,
+        y: 907,
+        width: 499,
+        height: 667,
+        tonality: "#ffaf38 0.2"
+      }
+    ]
+  },
+  "custom-31": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0Q2FzdGxlLmpwZw==`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-31.png",
+    name: "Castle Selfie 🏰<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9oaWdoX2dyb3VuZC9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTMuMyZkaXJMaWdodENvbG9yPWEzY2NmZg==`,
+        x: -119,
+        y: 156,
+        width: 3024,
+        height: 2075
+      }
+    ]
   }
 }
 var geom = {};
