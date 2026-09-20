@@ -942,7 +942,7 @@ const models = {
       {
         url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
         x: 1143,
-        y: 791,
+        y: 781,
         width: 530,
         height: 968,
         tonality: "#0eb591 0.2"
@@ -985,7 +985,7 @@ const models = {
       {
         url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci91bHRpbWF0ZS9mdWxsP3NraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTImY2FtZXJhUG9zaXRpb249eyJ4IjoiMi4zMyIsInkiOiIyNi43OCIsInoiOiIzNy40NCJ9JmNhbWVyYUZvY2FsUG9pbnQ9eyJ4IjoiLTAuNjEiLCJ5IjoiMTkuMzYiLCJ6IjoiLTIuNjEifQ==`,
         x: 1143,
-        y: 791,
+        y: 781,
         width: 530,
         height: 968,
         tonality: "#00a884 0.2"
