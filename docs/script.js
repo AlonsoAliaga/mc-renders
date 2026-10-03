@@ -211,7 +211,7 @@ const fonts = {
     }
   }
 }
-let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29","custom-30","custom-31","custom-32","custom-33","custom-34","custom-35","custom-36","custom-37","custom-38","custom-39","custom-40","custom-41","custom-42","custom-43","custom-44","custom-45","custom-46","custom-47","custom-48","custom-49","custom-50"];
+let adLockedModels = ["crossed","criss_cross","reading","profile","relaxing","bitzel","mojavatar","custom-5","custom-6","custom-7","custom-10","custom-11","custom-12","custom-13","custom-17","custom-18","custom-19","custom-20","custom-21","custom-22","custom-23","custom-24","custom-25","custom-26","custom-27","custom-28","custom-29","custom-30","custom-31","custom-32","custom-33","custom-34","custom-35","custom-36","custom-37","custom-38","custom-39","custom-40","custom-41","custom-42","custom-43","custom-44","custom-45","custom-46","custom-47","custom-48","custom-49","custom-50","custom-51","custom-52","custom-53","custom-54","custom-55","custom-56","custom-57","custom-58","custom-59","custom-60","custom-61","custom-62","custom-63","custom-64","custom-65","custom-66","custom-67","custom-68","custom-69","custom-70"];
 const models = {
   "default": {
     image: "default.png",
@@ -1129,6 +1129,190 @@ const models = {
         url: `bGF5ZXJzL01pbmVjcmFmdFRoZVB1cnBsZVBhbGFkaW5CbG9jay5wbmc=`,
         x: 0,
         y: 0
+      }
+    ]
+  },
+  "custom-38": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementEnglish.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>English 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-39": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementSpanish.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>Español 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-40": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementItalian.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>Italian 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-41": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementDutch.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>Dutch 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-42": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementTurkish.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>Turkish 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-43": {
+    custom: true,
+    url: `backgrounds/TheSiftAnnouncementKorean.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-38.png",
+    name: "The Sift Announcement 📢<br>Korean 🌐<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"0.56","y":"38.93","z":"-53.61"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1058,
+        y: 381,
+        crop: "0 0 664 463"
+      }
+    ]
+  },
+  "custom-44": {
+    custom: true,
+    url: `backgrounds/MinecraftReadyToMine.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-44.png",
+    name: "Ready to Mine ⛏️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/ultimate/full?skinUrl={skinUrl}&renderScale=5&cameraPosition={"x":"-17.19","y":"38.37","z":"51.08"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1338,
+        y: 431
+      }
+    ]
+  },
+  "custom-45": {
+    custom: true,
+    url: `backgrounds/MinecraftAether.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-45.png",
+    name: "Aether ☁️<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/cheering/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"3.82","y":"36.92","z":"-72.80"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1218,
+        y: 750,
+        width: 299,
+        height: 437
+      }
+    ]
+  },
+  "custom-46": {
+    custom: true,
+    url: `backgrounds/MinecraftWanted.jpg`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-46.png",
+    name: "Wanted 👮🏻<br><small><small>❌ Not supported with custom skin</small></small><br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `https://starlightskins.lunareclipse.studio/render/ultimate/full?skinUrl={skinUrl}&renderScale=2&cameraPosition={"x":"-19.15","y":"33.46","z":"-71.48"}&cameraFocalPoint={"x":"0.00","y":"12.00","z":"0.00"}`,
+        x: 1756,
+        y: 708,
+        width: 237,
+        height: 242,
+        crop: "0 0 354 360",
+        warp: "1756,708 1756,951 1992,710 1992,966",
+        tonality: "#c79e3e 0.5"
       }
     ]
   },
@@ -2235,8 +2419,40 @@ const EffectRegistry = {
   grayscale: convertToGrayscale,
   brightness: adjustBrightness,
   invert: invertLayer,
-  tonality: applyTonality
+  tonality: applyTonality,
+  warp: quadWarpLayer,
+  wave: waveLayer,
+  arc: arcLayer,
+  rotate: rotateLayer,
 };
+function rotateLayer(imageBuffer, args) {
+  const degrees = parseFloat(args) || 0;
+  if (degrees % 360 === 0) return imageBuffer;
+
+  const radians = (degrees * Math.PI) / 180;
+
+  const w = imageBuffer.width;
+  const h = imageBuffer.height;
+
+  const sin = Math.abs(Math.sin(radians));
+  const cos = Math.abs(Math.cos(radians));
+  
+  const newWidth = Math.floor(w * cos + h * sin);
+  const newHeight = Math.floor(w * sin + h * cos);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.max(1, newWidth);
+  canvas.height = Math.max(1, newHeight);
+  const ctx = canvas.getContext('2d');
+
+  ctx.translate(canvas.width / 2, canvas.height / 2);
+  
+  ctx.rotate(radians);
+
+  ctx.drawImage(imageBuffer, -w / 2, -h / 2);
+
+  return canvas;
+}
 let currentScaleId = "normal";
 let scale = 1;
 async function updateModel(usernameToUse) {
@@ -2525,7 +2741,6 @@ function generateGlowEffect(imageBuffer, args) {
   const intensity = parseInt(params[2]) || 3;
 
   const canvas = document.createElement('canvas');
-  // Añadimos margen extra para que el resplandor no se corte en los bordes
   canvas.width = imageBuffer.width + (width * 2);
   canvas.height = imageBuffer.height + (width * 2);
   const ctx = canvas.getContext('2d');
@@ -2533,7 +2748,6 @@ function generateGlowEffect(imageBuffer, args) {
   ctx.shadowColor = color;
   ctx.shadowBlur = width;
 
-  // Dibujamos la imagen múltiples veces de forma acumulativa para la intensidad
   for (let i = 0; i < intensity; i++) {
     ctx.drawImage(imageBuffer, width, width);
   }
@@ -2571,10 +2785,9 @@ function applyChromaKey(imageBuffer, args) {
   const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   const data = imgData.data;
 
-  // Parsear color HEX a RGB
   const tempCtx = document.createElement('canvas').getContext('2d');
   tempCtx.fillStyle = chromaColor;
-  const hex = tempCtx.fillStyle; // Convierte nombres como "green" a rgb/hex estándar
+  const hex = tempCtx.fillStyle;
   const rTarget = parseInt(hex.slice(1,3), 16);
   const gTarget = parseInt(hex.slice(3,5), 16);
   const bTarget = parseInt(hex.slice(5,7), 16);
@@ -2584,10 +2797,9 @@ function applyChromaKey(imageBuffer, args) {
     const g = data[i+1];
     const b = data[i+2];
 
-    // Distancia Euclidiana de color
     const diff = Math.sqrt((r-rTarget)**2 + (g-gTarget)**2 + (b-bTarget)**2);
     if (diff < tolerance) {
-      data[i+3] = 0; // Hace el píxel transparente
+      data[i+3] = 0;
     }
   }
 
@@ -2603,16 +2815,13 @@ function pixelateLayer(imageBuffer, args) {
   canvas.height = imageBuffer.height;
   const ctx = canvas.getContext('2d');
 
-  // Mini canvas temporal
   const smallCanvas = document.createElement('canvas');
   smallCanvas.width = Math.max(1, imageBuffer.width / size);
   smallCanvas.height = Math.max(1, imageBuffer.height / size);
   const smallCtx = smallCanvas.getContext('2d');
 
-  // Achicar imagen
   smallCtx.drawImage(imageBuffer, 0, 0, smallCanvas.width, smallCanvas.height);
 
-  // Agrandar sin suavizado
   ctx.imageSmoothingEnabled = false;
   ctx.drawImage(smallCanvas, 0, 0, smallCanvas.width, smallCanvas.height, 0, 0, canvas.width, canvas.height);
 
@@ -2635,7 +2844,6 @@ function convertToGrayscale(imageBuffer, args) {
     const r = data[i];
     const g = data[i+1];
     const b = data[i+2];
-    // Luminosidad estándar ITU-R BT.601
     const gray = 0.299 * r + 0.587 * g + 0.114 * b;
 
     data[i]   = r + (gray - r) * factor;
@@ -2681,12 +2889,115 @@ function invertLayer(imageBuffer, args) {
   const data = imgData.data;
 
   for (let i = 0; i < data.length; i += 4) {
-    data[i]   = 255 - data[i];     // Invertir R
-    data[i+1] = 255 - data[i+1];   // Invertir G
-    data[i+2] = 255 - data[i+2];   // Invertir B
+    data[i]   = 255 - data[i];
+    data[i+1] = 255 - data[i+1];
+    data[i+2] = 255 - data[i+2];
   }
 
   ctx.putImageData(imgData, 0, 0);
+  return canvas;
+}
+
+function quadWarpLayer(imageBuffer, args) { //warp: "x1,y1 x2,y2 x3,y3 x4,y4"
+  const points = args.split(" ").map(p => p.split(",").map(Number));
+  if (points.length < 4) return imageBuffer;
+
+  const [ptTL, ptBL, ptTR, ptBR] = points;
+
+  const minX = Math.min(ptTL[0], ptBL[0], ptTR[0], ptBR[0]);
+  const maxX = Math.max(ptTL[0], ptBL[0], ptTR[0], ptBR[0]);
+  const minY = Math.min(ptTL[1], ptBL[1], ptTR[1], ptBR[1]);
+  const maxY = Math.max(ptTL[1], ptBL[1], ptTR[1], ptBR[1]);
+
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.max(1, maxX - minX);
+  canvas.height = Math.max(1, maxY - minY);
+  const ctx = canvas.getContext('2d');
+
+  const tl = [ptTL[0] - minX, ptTL[1] - minY];
+  const bl = [ptBL[0] - minX, ptBL[1] - minY];
+  const tr = [ptTR[0] - minX, ptTR[1] - minY];
+  const br = [ptBR[0] - minX, ptBR[1] - minY];
+
+  const w = imageBuffer.width;
+  const h = imageBuffer.height;
+
+  function drawTriangle(x0, y0, x1, y1, x2, y2, u0, v0, u1, v1, u2, v2) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(x0, y0);
+    ctx.lineTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.closePath();
+    ctx.clip();
+
+    const delta = u0*v1 + v0*u2 + u1*v2 - u2*v1 - v0*u1 - u0*v2;
+    if (Math.abs(delta) < 0.001) { ctx.restore(); return; }
+
+    const a = (x0*v1 + v0*x2 + x1*v2 - x2*v1 - v0*x1 - x0*v2) / delta;
+    const b = (y0*v1 + v0*y2 + y1*v2 - y2*v1 - v0*y1 - y0*v2) / delta;
+    const c = (u0*x1 + x0*u2 + u1*x2 - u2*x1 - x0*u1 - u0*x2) / delta;
+    const d = (u0*y1 + y0*u2 + u1*y2 - u2*y1 - y0*u1 - u0*y2) / delta;
+    const e = (u0*v1*x2 + v0*u2*x1 + u1*v2*x0 - u2*v1*x0 - v0*u1*x2 - u0*v2*x1) / delta;
+    const f = (u0*v1*y2 + v0*u2*y1 + u1*v2*y0 - u2*v1*y0 - v0*u1*y2 - u0*v2*y1) / delta;
+
+    ctx.transform(a, b, c, d, e, f);
+    ctx.drawImage(imageBuffer, 0, 0);
+    ctx.restore();
+  }
+
+  drawTriangle(tl[0], tl[1], bl[0], bl[1], tr[0], tr[1], 0, 0, 0, h, w, 0);
+  drawTriangle(bl[0], bl[1], tr[0], tr[1], br[0], br[1], 0, h, w, 0, w, h);
+
+  return canvas;
+}
+
+function waveLayer(imageBuffer, args) { //wave: "vertical 10 0.05"
+  const params = args.split(" ");
+  const direction = params[0] || "vertical";
+  const amplitude = parseFloat(params[1]) || 10;
+  const frequency = parseFloat(params[2]) || 0.05;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = imageBuffer.width + (direction === "horizontal" ? amplitude * 2 : 0);
+  canvas.height = imageBuffer.height + (direction === "vertical" ? amplitude * 2 : 0);
+  const ctx = canvas.getContext('2d');
+
+  if (direction === "vertical") {
+    for (let x = 0; x < imageBuffer.width; x++) {
+      const yOffset = Math.sin(x * frequency) * amplitude + amplitude;
+      ctx.drawImage(imageBuffer, x, 0, 1, imageBuffer.height, x, yOffset, 1, imageBuffer.height);
+    }
+  } else {
+    for (let y = 0; y < imageBuffer.height; y++) {
+      const xOffset = Math.sin(y * frequency) * amplitude + amplitude;
+      ctx.drawImage(imageBuffer, 0, y, imageBuffer.width, 1, xOffset, y, imageBuffer.width, 1);
+    }
+  }
+
+  return canvas;
+}
+
+function arcLayer(imageBuffer, args) {
+  const factor = parseFloat(args) || 0.2;
+  const w = imageBuffer.width;
+  const h = imageBuffer.height;
+
+  const maxDisplacement = Math.abs(w * factor);
+  const canvas = document.createElement('canvas');
+  canvas.width = w;
+  canvas.height = h + maxDisplacement;
+  const ctx = canvas.getContext('2d');
+
+  for (let x = 0; x < w; x++) {
+    const normalizedX = (x / w) - 0.5; 
+    const displacement = (0.25 - (normalizedX * normalizedX)) * w * factor;
+    
+    const yOffset = factor > 0 ? maxDisplacement - displacement : -displacement;
+
+    ctx.drawImage(imageBuffer, x, 0, 1, h, x, yOffset, 1, h);
+  }
+
   return canvas;
 }
 function canvasToImage(canvas) {
