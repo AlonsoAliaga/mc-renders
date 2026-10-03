@@ -1316,6 +1316,71 @@ const models = {
       }
     ]
   },
+  "custom-47": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SGFwcHlHaGFzdE92ZXJ3b3JsZC5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-47.png",
+    name: "Happy Ghast Overworld 🌄<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20vZnVsbD93aWRlTW9kZWw9aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fsb25zb0FsaWFnYS9BbG9uc29BbGlhZ2FBUEkvcmVmcy9oZWFkcy9tYWluL3JlbmRlcnMvc2l0dGluZ19oYW5kc3VwX25vY2FwZS5vYmomc2xpbU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3NpdHRpbmdfaGFuZHN1cF9ub2NhcGUub2JqJnNraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTAuNQ==`,
+        x: 1333,
+        y: 207,
+        width: 226,
+        height: 306
+      }
+    ]
+  },
+  "custom-48": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SGFwcHlHaGFzdE5ldGhlci5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-48.png",
+    name: "Happy Ghast Nether 🔥<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20vZnVsbD93aWRlTW9kZWw9aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fsb25zb0FsaWFnYS9BbG9uc29BbGlhZ2FBUEkvcmVmcy9oZWFkcy9tYWluL3JlbmRlcnMvc2l0dGluZ19oYW5kc3VwX25vY2FwZS5vYmomc2xpbU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3NpdHRpbmdfaGFuZHN1cF9ub2NhcGUub2JqJnNraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTAuNQ==`,
+        x: 1333,
+        y: 207,
+        width: 226,
+        height: 306,
+        tonality: "#e62c2c 0.2"
+      }
+    ]
+  },
+  "custom-49": {
+    custom: true,
+    url: `YmFja2dyb3VuZHMvTWluZWNyYWZ0SGFwcHlHaGFzdEVuZC5qcGc=`,
+    isRen: true,
+    category: "wallpaper",
+    image: "custom/custom-49.png",
+    name: "Happy Ghast End 🐲<br><small><small><small>❌ Not supported with image quality</small></small></small>",
+    uuid: true,
+    crops: [
+      "Not available"
+    ],
+    composition: [
+      {
+        url: `aHR0cHM6Ly9zdGFybGlnaHRza2lucy5sdW5hcmVjbGlwc2Uuc3R1ZGlvL3JlbmRlci9jdXN0b20vZnVsbD93aWRlTW9kZWw9aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fsb25zb0FsaWFnYS9BbG9uc29BbGlhZ2FBUEkvcmVmcy9oZWFkcy9tYWluL3JlbmRlcnMvc2l0dGluZ19oYW5kc3VwX25vY2FwZS5vYmomc2xpbU1vZGVsPWh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbG9uc29BbGlhZ2EvQWxvbnNvQWxpYWdhQVBJL3JlZnMvaGVhZHMvbWFpbi9yZW5kZXJzL3NpdHRpbmdfaGFuZHN1cF9ub2NhcGUub2JqJnNraW5Vcmw9e3NraW5Vcmx9JnJlbmRlclNjYWxlPTAuNQ==`,
+        x: 1333,
+        y: 207,
+        width: 226,
+        height: 306,
+        tonality: "#6f3ea7 0.2"
+      }
+    ]
+  },
 }
 var geom = {};
 (function(){
